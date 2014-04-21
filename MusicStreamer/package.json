@@ -1,0 +1,12 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "consolidate": "^0.10.0",
+    "express": "2.5.8",
+    "handlebars": "^2.0.0-alpha.2",
+    "jade": ">= 0.0.1",
+    "express3-handlebars": "*"
+  }
+}
