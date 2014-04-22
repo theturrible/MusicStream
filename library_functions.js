@@ -12,6 +12,23 @@ var app = null;
 var cnt = 0;
 var song_list = [];
 
+
+//USER REGISTRATION
+
+function registerNewUser(dataf){
+  //basic user shit
+  var user = {
+    email: '',
+    firstName: '', 
+    lastName: '',
+    password: '',
+    logins: ''
+  }
+
+}
+
+
+
 function findNextSong(){
   if(cnt < song_list.length && running){
     findSong(song_list[cnt], function(err){
@@ -31,7 +48,7 @@ function findNextSong(){
   }
 }
 
-function findSong(item, callback){
+function findSong(item, callback){ 
   app.db.songs.findOne({location: item}, function(err, doc){
     // only scan if we haven't scanned before, or we are scanning every document again
     if(doc == null || hard_rescan){

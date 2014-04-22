@@ -20,6 +20,9 @@ exports.createRoutes = function(app_ref){
   app.get('/songs/:id', sendSong);
   app.get('/cover/:id', sendCover);
   app.get('/downloadplaylist/:id', downloadPlaylist);
+  //login and register controls
+  app.io.route('registerUser', registerNew);
+
   app.io.route('scan_page_connected', function(req){ req.io.join('scanners'); });
   app.io.route('player_page_connected', function(req){ req.io.join('players'); });
   app.io.route('set_comp_name', setCompName);
@@ -36,6 +39,12 @@ exports.createRoutes = function(app_ref){
   // remote control routes
   app.io.route('get_receivers', getReceivers);
 };
+
+function registerNew(){
+
+
+}
+
 
 function account(req, res){
   res.render('account', {menu: true, userName: "Ivan Grinkevich", email: "grin.van@gmail.com", logins: "over 9000"});
