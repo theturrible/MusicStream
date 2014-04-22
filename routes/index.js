@@ -16,7 +16,7 @@ exports.createRoutes = function(app_ref){
   app.get('/scan', scanRoute);
   app.get('/account', account);
   app.get('/register', register);
-  app.get('/login', register);
+  app.get('/login', login);
   app.get('/songs/:id', sendSong);
   app.get('/cover/:id', sendCover);
   app.get('/downloadplaylist/:id', downloadPlaylist);

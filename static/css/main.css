@@ -56,7 +56,12 @@ body{
   width: 90%;
 }
 
-
+#login_div{
+  background-color: #fff;
+  width: 500px;
+  height: 600px;
+  margin: auto;
+}
 
 
 
