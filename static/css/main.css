@@ -39,12 +39,30 @@ body{
 }
 #acc_content_header{
   height: 10%;
-  
+  width: 95%;
 }
 
 .fa.fa-user.fa-5x{
   color: #ff9900;
 }
+.account_table{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%
+}
+.account_table .pic_head{
+  width: 10%;
+  height: 70px;
+}
+.account_table .pic{
+  width: 10%;
+  height: 31px;
+  text-align: center;
+}
+.account_table .content{
+  width: 90%;
+}
+
 
 
 
