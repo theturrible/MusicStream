@@ -1,6 +1,6 @@
 {% extends 'base/main_base.html' %}
 
-{% block title %}Player{% endblock %}
+{% block title %}Music{% endblock %}
 
 {% block content %}
 <div id="wrapper" class="custom_scrollbar" tabindex="0">
@@ -77,11 +77,6 @@
   <div class='option_div'>
     <i class='fa fa-plus-square-o options'></i>
   </div>
-  {% if song.attributes.hasOwnProperty('cover_location') %}
-    <img class='cover' src='/cover/{{song.attributes._id}}'/>
-  {% else %}
-    <i class='fa fa-question unkown_cover'></i>
-  {% endif %}
   <span class='song_text'>{{song.attributes.title}}</span>
 </td>
 <td><span class='colsearch'>{{song.attributes.display_artist}}</span></td>
@@ -90,11 +85,6 @@
 </tr>
 </script>
 <script type="text/swig" id="current_info_template">
-  {% if attributes.hasOwnProperty('cover_location') %}
-    <img class='info_cover' src='/cover/{{attributes._id}}'/>
-  {% else %}
-    <i class='fa fa-question info_unknown_cover'></i>
-  {% endif %}
   <div class='info_wrapper'>
     <p class="info_title">{{attributes.title}}</p>
     <p class="info_detail"><span class='colsearch'>{{attributes.display_artist}}</span> - <span class='colsearch'>{{attributes.album}}</span></p>
@@ -104,13 +94,10 @@
 <script type="text/swig" id="options_template">
 <div class="dropdown open {{dropup}}">
   <ul class="dropdown-menu options-menu custom_scrollbar" role="menu">
-    <li class='play_next'><a>Play Next</a></li>
     {% if current_playlist.editable %}
-      <li class='remove_from_playlist' id='{{current_playlist._id}}'><a>Remove from playlist</a></li>
+      <li class='remove_from_playlist' id='{{current_playlist._id}}'><a style="color:ff9900">Remove from playlist</a></li>
     {% endif %}
-    <li class='hard_rescan'><a>Hard Rescan</a></li>
-    <li class="divider"></li>
-    <li role="presentation" class="dropdown-header">Add to Playlist</li>
+    <li role="presentation" class="dropdown-header" style="color: #ff9900;">Add to Playlist</li>
     {% for playlist in playlists %}
       {% if playlist.attributes.editable %}
       <li class='add_to_playlist' id="{{playlist.attributes._id}}"><a>{{playlist.attributes.title}}</a></li>

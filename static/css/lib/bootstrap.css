@@ -317,13 +317,13 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #ff9900;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #ff9900;
   text-decoration: underline;
 }
 
@@ -479,7 +479,7 @@ h6,
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #000;
 }
 
 h1 small,
@@ -3335,7 +3335,7 @@ input[type="button"].btn-block {
   padding: 3px 20px;
   font-size: 12px;
   line-height: 1.428571429;
-  color: #999999;
+  color: #ffffff;
 }
 
 .dropdown-backdrop {
@@ -4445,32 +4445,32 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #ff9900;
+  border-color: #ff9900;
 }
 
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #fff;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #fff;
   background-color: transparent;
 }
 
 .navbar-default .navbar-text {
-  color: #777777;
+  color: #fff;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #fff;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
-  background-color: transparent;
+  color: #fff;
+  background-color: #8a4b08;
 }
 
 .navbar-default .navbar-nav > .active > a,
