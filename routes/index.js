@@ -39,8 +39,6 @@ function account(req, res){
   res.render('account', {menu: true, userName: "Ivan Grinkevich"});
 }
 
-
-
 function musicRoute(req, res){
   res.render('index', {menu: true});
 }
