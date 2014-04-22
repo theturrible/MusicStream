@@ -4,6 +4,7 @@ body{
   padding-top: 32px;
   background-color: #585858;
 }
+
 #wrapper{
   width: 100%;
   height: 100%;
@@ -16,7 +17,7 @@ body{
   height: 90%;
   height: calc(100% - 100px);
   margin-top: 40px;
-  margin-left: 200px;
+  margin-left: 250px;
   padding: 20px;
   background-color: #999898;
 }
@@ -48,6 +49,7 @@ body{
 }
 #sidebar h3{
   padding-left: 10px;
+  color: #ff9900;
 }
 #sidebar_height_wrapper{
   height: 80%;
@@ -310,4 +312,8 @@ tr:hover .options{
 /*** th widths ***/
 .duration_th{
   width: 50px;
+}
+
+.navbar-inner{
+  color: #ff9900;
 }
