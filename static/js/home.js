@@ -197,11 +197,11 @@ function PlayState(){
   };
   this.setIsPlaying = function(isPlaying){
     this.is_playing = isPlaying;
-    $(this.names.playpause).removeClass("fa-play fa-pause");
+    $(this.names.playpause).removeClass("fa-play-circle fa-pause");
     if(this.is_playing){
       $(this.names.playpause).addClass("fa-pause");
     } else {
-      $(this.names.playpause).addClass("fa-play");
+      $(this.names.playpause).addClass("fa-play-circle");
     }
   }
   this.togglePlayState = function(){
