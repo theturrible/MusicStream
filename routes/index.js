@@ -36,7 +36,7 @@ exports.createRoutes = function(app_ref){
 };
 
 function account(req, res){
-  res.render('account', {menu: true, userName: "Ivan Grinkevich"});
+  res.render('account', {menu: true, userName: "Ivan Grinkevich", email: "grin.van@gmail.com", logins: "over 9000"});
 }
 
 function musicRoute(req, res){

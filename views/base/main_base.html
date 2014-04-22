@@ -26,9 +26,19 @@
     <ul class="nav navbar-nav">
       <li><a href="/">Music</a></li>
       <li><a href="/scan">Scan Library</a></li>
+          </ul> 
+    <ul class="nav navbar-nav navbar-right">
       <li><a href="/account">My Account</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Name Here<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Play Favorite</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </li>
     </ul>
-  </nav>
+
+ </nav>
   {% endif %}
   {% block content %}
   {% endblock %}

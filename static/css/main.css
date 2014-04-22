@@ -37,9 +37,40 @@ body{
 #acc_content_header{
   background-color: #CCCCCC;
   height: 10%;
+<<<<<<< HEAD
   margin-left: 30%;
   margin-right: 30%;
 }
+=======
+  width: 95%;
+}
+
+.fa.fa-user.fa-5x{
+  color: #ff9900;
+}
+.account_table{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%
+}
+.account_table .pic_head{
+  width: 10%;
+  height: 70px;
+}
+.account_table .pic{
+  width: 10%;
+  height: 31px;
+  text-align: center;
+}
+.account_table .content{
+  width: 90%;
+}
+
+
+
+
+
+>>>>>>> d655a9f207697905f6a6ab7e86ccb462b1e5fd8c
 #content > div > h1{
   margin-top: 10px;
 }
