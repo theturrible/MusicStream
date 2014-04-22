@@ -15,6 +15,7 @@ exports.createRoutes = function(app_ref){
   app.get('/', musicRoute);
   app.get('/scan', scanRoute);
   app.get('/account', account);
+  app.get('/register', register);
   app.get('/songs/:id', sendSong);
   app.get('/cover/:id', sendCover);
   app.get('/downloadplaylist/:id', downloadPlaylist);
@@ -37,6 +38,10 @@ exports.createRoutes = function(app_ref){
 
 function account(req, res){
   res.render('account', {menu: true, userName: "Ivan Grinkevich", email: "grin.van@gmail.com", logins: "over 9000"});
+}
+
+function register(req, res){
+  res.render('register', {menu: true});
 }
 
 function musicRoute(req, res){
