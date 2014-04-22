@@ -2,6 +2,7 @@ body, html{
 }
 body{
   padding-top: 32px;
+  background-color: #585858;
 }
 #wrapper{
   width: 100%;
@@ -17,6 +18,7 @@ body{
   margin-top: 40px;
   margin-left: 200px;
   padding: 20px;
+  background-color: #999898;
 }
 #content > div{
   height: 100%;
@@ -75,7 +77,7 @@ body{
   bottom: 0;
   height: 61px;
   width: 100%;
-  background-color: black;
+  background-color: #585858;
   box-shadow: 0 0 30px #ccc;
   padding-top: 2px;
 }
@@ -90,7 +92,7 @@ body{
 }
 #bottom_bar:hover .duration{
   display: block;
-  background-color: #4BF;
+  background-color: #ff9900;
   z-index: 2;
   padding: 2px;
   padding-left: 5px;
@@ -106,7 +108,7 @@ body{
 }
 #bottom_bar:hover .current_time{
   display: block;
-  background-color: #4BF;
+  background-color: #ff9900;
   z-index: 2;
   padding: 2px;
   padding-right: 5px;
@@ -173,6 +175,24 @@ tr:hover .options{
   margin-left: 8px;
 }
 /*** bottom bar items ***/
+
+/* changing color of buttons */
+.fa.fa-chevron-circle-left.fa-3x{
+  color: #ff9900;
+}
+.fa.fa-play-circle.fa-3x{
+  color: #ff9900;
+}
+.fa.fa-chevron-circle-right.fa-3x{
+  color: #ff9900;
+}
+.fa.fa-random.fa-3x{
+  color: #ff9900;
+}
+.fa.fa-retweet.fa-3x{
+  color: #ff9900;
+}
+
 .controls{
   float: left;
   width: 323px;
@@ -188,7 +208,7 @@ tr:hover .options{
   height: 100%;
 }
 .controls .fa:hover{
-  background-color: #ddd;
+  background-color: #999898;
 }
 #settings_bar{
   float: right;
@@ -215,20 +235,20 @@ tr:hover .options{
 }
 /*** slider changes ***/
 .slider.slider-horizontal:hover .slider-track{
-  background: #ddd;
+  background: #cc9;
 }
 .slider.slider-horizontal .slider-track{
   height: 5px;
-  background: #eee;
+  background: #999898;
   transition: background 1s;
 }
 .slider-selection{
-  background: #4BF;
+  background: #ff9900;
 }
 .slider.slider-horizontal .slider-handle{
   opacity: 1;
   margin-top: -7px;
-  background: #4BF;
+  background: #ff9900;
 }
 /*** info ***/
 #current_info{
