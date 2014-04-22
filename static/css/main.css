@@ -26,6 +26,10 @@ body{
   overflow-y: auto;
 }
 
+#alignright{
+text-align:right;
+}
+
 /* Account Page */
 
 #acc_content{
