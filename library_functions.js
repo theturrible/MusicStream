@@ -15,7 +15,7 @@ var song_list = [];
 
 //USER REGISTRATION
 
-function registerNewUser(dataf){
+function registerNewUser(data){
   //basic user shit
   var user = {
     email: '',
