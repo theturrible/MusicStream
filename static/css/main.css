@@ -22,6 +22,21 @@ body{
   height: 100%;
   overflow-y: auto;
 }
+#acc_content{
+  background-color: #999898;
+  height: 100%;
+  margin-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #ccc;
+}
+#acc_content_header{
+  background-color: #CCCCCC;
+  height: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
 #content > div > h1{
   margin-top: 10px;
 }
@@ -32,7 +47,7 @@ body{
   height: 100%;
   position: fixed;
   left: 0;
-  box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 30px #ccc;
 }
 .sidebar_controls{
   bottom: 120px;

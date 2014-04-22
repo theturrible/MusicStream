@@ -14,6 +14,7 @@ exports.createRoutes = function(app_ref){
   app = app_ref;
   app.get('/', musicRoute);
   app.get('/scan', scanRoute);
+  app.get('/account', account);
   app.get('/songs/:id', sendSong);
   app.get('/cover/:id', sendCover);
   app.get('/downloadplaylist/:id', downloadPlaylist);
@@ -33,6 +34,12 @@ exports.createRoutes = function(app_ref){
   // remote control routes
   app.io.route('get_receivers', getReceivers);
 };
+
+function account(req, res){
+  res.render('account', {menu: true});
+}
+
+
 
 function musicRoute(req, res){
   res.render('index', {menu: true});
