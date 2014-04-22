@@ -78,7 +78,7 @@ function findSong(item, callback){
             if(!exists){
               fs.writeFile(filename, pic['data'], function(err){
                 if(err) console.log(err);
-                console.log("Wrote file!");
+                console.log("Added pic to song", song.title);
               });
             }
           })
@@ -88,6 +88,7 @@ function findSong(item, callback){
           app.db.songs.insert(song, function (err, newDoc){
             taglib_fetch(item, newDoc._id);
             // update the browser the song has been added
+            console.log("Added to db: ", song.title);
             broadcast("update", {
               count: song_list.length,
               completed: cnt,
