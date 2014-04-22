@@ -1,0 +1,1783 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'update', '-a', '-g' ]
+2 info using npm@1.4.7
+3 info using node@v0.10.26
+4 verbose url raw bootstrap
+5 verbose url resolving [ 'https://registry.npmjs.org/', './bootstrap' ]
+6 verbose url resolved https://registry.npmjs.org/bootstrap
+7 silly registry.get cb [ 304, undefined ]
+8 verbose etag bootstrap from cache
+9 verbose url raw grunt-cli
+10 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-cli' ]
+11 verbose url resolved https://registry.npmjs.org/grunt-cli
+12 silly registry.get cb [ 304, undefined ]
+13 verbose etag grunt-cli from cache
+14 verbose url raw express
+15 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+16 verbose url resolved https://registry.npmjs.org/express
+17 silly registry.get cb [ 304, undefined ]
+18 verbose etag express from cache
+19 verbose url raw handlebars
+20 verbose url resolving [ 'https://registry.npmjs.org/', './handlebars' ]
+21 verbose url resolved https://registry.npmjs.org/handlebars
+22 silly registry.get cb [ 304, undefined ]
+23 verbose etag handlebars from cache
+24 verbose url raw hbs
+25 verbose url resolving [ 'https://registry.npmjs.org/', './hbs' ]
+26 verbose url resolved https://registry.npmjs.org/hbs
+27 silly registry.get cb [ 304, undefined ]
+28 verbose etag hbs from cache
+29 verbose url raw npm
+30 verbose url resolving [ 'https://registry.npmjs.org/', './npm' ]
+31 verbose url resolved https://registry.npmjs.org/npm
+32 silly registry.get cb [ 304, undefined ]
+33 verbose etag npm from cache
+34 verbose url raw nopt
+35 verbose url resolving [ 'https://registry.npmjs.org/', './nopt' ]
+36 verbose url resolved https://registry.npmjs.org/nopt
+37 silly registry.get cb [ 304, undefined ]
+38 verbose etag nopt from cache
+39 verbose url raw findup-sync
+40 verbose url resolving [ 'https://registry.npmjs.org/', './findup-sync' ]
+41 verbose url resolved https://registry.npmjs.org/findup-sync
+42 silly registry.get cb [ 304, undefined ]
+43 verbose etag findup-sync from cache
+44 verbose url raw resolve
+45 verbose url resolving [ 'https://registry.npmjs.org/', './resolve' ]
+46 verbose url resolved https://registry.npmjs.org/resolve
+47 silly registry.get cb [ 304, undefined ]
+48 verbose etag resolve from cache
+49 verbose url raw optimist
+50 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+51 verbose url resolved https://registry.npmjs.org/optimist
+52 silly registry.get cb [ 304, undefined ]
+53 verbose etag optimist from cache
+54 verbose url raw commander
+55 verbose url resolving [ 'https://registry.npmjs.org/', './commander' ]
+56 verbose url resolved https://registry.npmjs.org/commander
+57 silly registry.get cb [ 304, undefined ]
+58 verbose etag commander from cache
+59 verbose url raw uglify-js
+60 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js' ]
+61 verbose url resolved https://registry.npmjs.org/uglify-js
+62 silly registry.get cb [ 304, undefined ]
+63 verbose etag uglify-js from cache
+64 verbose url raw walk
+65 verbose url resolving [ 'https://registry.npmjs.org/', './walk' ]
+66 verbose url resolved https://registry.npmjs.org/walk
+67 silly registry.get cb [ 304, undefined ]
+68 verbose etag walk from cache
+69 verbose registry.get handlebars not expired, no request
+70 verbose url raw abbrev
+71 verbose url resolving [ 'https://registry.npmjs.org/', './abbrev' ]
+72 verbose url resolved https://registry.npmjs.org/abbrev
+73 silly registry.get cb [ 304, undefined ]
+74 verbose etag abbrev from cache
+75 verbose url raw ansi
+76 verbose url resolving [ 'https://registry.npmjs.org/', './ansi' ]
+77 verbose url resolved https://registry.npmjs.org/ansi
+78 silly registry.get cb [ 304, undefined ]
+79 verbose etag ansi from cache
+80 verbose url raw ansicolors
+81 verbose url resolving [ 'https://registry.npmjs.org/', './ansicolors' ]
+82 verbose url resolved https://registry.npmjs.org/ansicolors
+83 silly registry.get cb [ 304, undefined ]
+84 verbose etag ansicolors from cache
+85 verbose url raw ansistyles
+86 verbose url resolving [ 'https://registry.npmjs.org/', './ansistyles' ]
+87 verbose url resolved https://registry.npmjs.org/ansistyles
+88 silly registry.get cb [ 304, undefined ]
+89 verbose etag ansistyles from cache
+90 verbose url raw archy
+91 verbose url resolving [ 'https://registry.npmjs.org/', './archy' ]
+92 verbose url resolved https://registry.npmjs.org/archy
+93 silly registry.get cb [ 304, undefined ]
+94 verbose etag archy from cache
+95 verbose url raw block-stream
+96 verbose url resolving [ 'https://registry.npmjs.org/', './block-stream' ]
+97 verbose url resolved https://registry.npmjs.org/block-stream
+98 silly registry.get cb [ 304, undefined ]
+99 verbose etag block-stream from cache
+100 verbose url raw child-process-close
+101 verbose url resolving [ 'https://registry.npmjs.org/', './child-process-close' ]
+102 verbose url resolved https://registry.npmjs.org/child-process-close
+103 silly registry.get cb [ 304, undefined ]
+104 verbose etag child-process-close from cache
+105 verbose url raw chmodr
+106 verbose url resolving [ 'https://registry.npmjs.org/', './chmodr' ]
+107 verbose url resolved https://registry.npmjs.org/chmodr
+108 silly registry.get cb [ 304, undefined ]
+109 verbose etag chmodr from cache
+110 verbose url raw chownr
+111 verbose url resolving [ 'https://registry.npmjs.org/', './chownr' ]
+112 verbose url resolved https://registry.npmjs.org/chownr
+113 silly registry.get cb [ 304, undefined ]
+114 verbose etag chownr from cache
+115 verbose url raw cmd-shim
+116 verbose url resolving [ 'https://registry.npmjs.org/', './cmd-shim' ]
+117 verbose url resolved https://registry.npmjs.org/cmd-shim
+118 silly registry.get cb [ 304, undefined ]
+119 verbose etag cmd-shim from cache
+120 verbose url raw columnify
+121 verbose url resolving [ 'https://registry.npmjs.org/', './columnify' ]
+122 verbose url resolved https://registry.npmjs.org/columnify
+123 silly registry.get cb [ 304, undefined ]
+124 verbose etag columnify from cache
+125 verbose url raw editor
+126 verbose url resolving [ 'https://registry.npmjs.org/', './editor' ]
+127 verbose url resolved https://registry.npmjs.org/editor
+128 silly registry.get cb [ 304, undefined ]
+129 verbose etag editor from cache
+130 verbose url raw fstream
+131 verbose url resolving [ 'https://registry.npmjs.org/', './fstream' ]
+132 verbose url resolved https://registry.npmjs.org/fstream
+133 silly registry.get cb [ 304, undefined ]
+134 verbose etag fstream from cache
+135 verbose url raw fstream-npm
+136 verbose url resolving [ 'https://registry.npmjs.org/', './fstream-npm' ]
+137 verbose url resolved https://registry.npmjs.org/fstream-npm
+138 silly registry.get cb [ 304, undefined ]
+139 verbose etag fstream-npm from cache
+140 verbose url raw github-url-from-git
+141 verbose url resolving [ 'https://registry.npmjs.org/', './github-url-from-git' ]
+142 verbose url resolved https://registry.npmjs.org/github-url-from-git
+143 silly registry.get cb [ 304, undefined ]
+144 verbose etag github-url-from-git from cache
+145 verbose url raw github-url-from-username-repo
+146 verbose url resolving [ 'https://registry.npmjs.org/',
+146 verbose url resolving   './github-url-from-username-repo' ]
+147 verbose url resolved https://registry.npmjs.org/github-url-from-username-repo
+148 silly registry.get cb [ 304, undefined ]
+149 verbose etag github-url-from-username-repo from cache
+150 verbose url raw glob
+151 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+152 verbose url resolved https://registry.npmjs.org/glob
+153 silly registry.get cb [ 304, undefined ]
+154 verbose etag glob from cache
+155 verbose url raw graceful-fs
+156 verbose url resolving [ 'https://registry.npmjs.org/', './graceful-fs' ]
+157 verbose url resolved https://registry.npmjs.org/graceful-fs
+158 silly registry.get cb [ 304, undefined ]
+159 verbose etag graceful-fs from cache
+160 verbose url raw ini
+161 verbose url resolving [ 'https://registry.npmjs.org/', './ini' ]
+162 verbose url resolved https://registry.npmjs.org/ini
+163 silly registry.get cb [ 304, undefined ]
+164 verbose etag ini from cache
+165 verbose url raw init-package-json
+166 verbose url resolving [ 'https://registry.npmjs.org/', './init-package-json' ]
+167 verbose url resolved https://registry.npmjs.org/init-package-json
+168 silly registry.get cb [ 304, undefined ]
+169 verbose etag init-package-json from cache
+170 verbose url raw lockfile
+171 verbose url resolving [ 'https://registry.npmjs.org/', './lockfile' ]
+172 verbose url resolved https://registry.npmjs.org/lockfile
+173 silly registry.get cb [ 304, undefined ]
+174 verbose etag lockfile from cache
+175 verbose url raw lru-cache
+176 verbose url resolving [ 'https://registry.npmjs.org/', './lru-cache' ]
+177 verbose url resolved https://registry.npmjs.org/lru-cache
+178 silly registry.get cb [ 304, undefined ]
+179 verbose etag lru-cache from cache
+180 verbose url raw minimatch
+181 verbose url resolving [ 'https://registry.npmjs.org/', './minimatch' ]
+182 verbose url resolved https://registry.npmjs.org/minimatch
+183 silly registry.get cb [ 304, undefined ]
+184 verbose etag minimatch from cache
+185 verbose url raw mkdirp
+186 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp' ]
+187 verbose url resolved https://registry.npmjs.org/mkdirp
+188 silly registry.get cb [ 304, undefined ]
+189 verbose etag mkdirp from cache
+190 verbose url raw npm-install-checks
+191 verbose url resolving [ 'https://registry.npmjs.org/', './npm-install-checks' ]
+192 verbose url resolved https://registry.npmjs.org/npm-install-checks
+193 silly registry.get cb [ 304, undefined ]
+194 verbose etag npm-install-checks from cache
+195 verbose url raw node-gyp
+196 verbose url resolving [ 'https://registry.npmjs.org/', './node-gyp' ]
+197 verbose url resolved https://registry.npmjs.org/node-gyp
+198 silly registry.get cb [ 304, undefined ]
+199 verbose etag node-gyp from cache
+200 verbose url raw npm-user-validate
+201 verbose url resolving [ 'https://registry.npmjs.org/', './npm-user-validate' ]
+202 verbose url resolved https://registry.npmjs.org/npm-user-validate
+203 silly registry.get cb [ 304, undefined ]
+204 verbose etag npm-user-validate from cache
+205 verbose url raw npm-registry-client
+206 verbose url resolving [ 'https://registry.npmjs.org/', './npm-registry-client' ]
+207 verbose url resolved https://registry.npmjs.org/npm-registry-client
+208 silly registry.get cb [ 304, undefined ]
+209 verbose etag npm-registry-client from cache
+210 verbose url raw npmconf
+211 verbose url resolving [ 'https://registry.npmjs.org/', './npmconf' ]
+212 verbose url resolved https://registry.npmjs.org/npmconf
+213 silly registry.get cb [ 304, undefined ]
+214 verbose etag npmconf from cache
+215 verbose url raw npmlog
+216 verbose url resolving [ 'https://registry.npmjs.org/', './npmlog' ]
+217 verbose url resolved https://registry.npmjs.org/npmlog
+218 silly registry.get cb [ 304, undefined ]
+219 verbose etag npmlog from cache
+220 verbose url raw once
+221 verbose url resolving [ 'https://registry.npmjs.org/', './once' ]
+222 verbose url resolved https://registry.npmjs.org/once
+223 silly registry.get cb [ 304, undefined ]
+224 verbose etag once from cache
+225 verbose url raw opener
+226 verbose url resolving [ 'https://registry.npmjs.org/', './opener' ]
+227 verbose url resolved https://registry.npmjs.org/opener
+228 silly registry.get cb [ 304, undefined ]
+229 verbose etag opener from cache
+230 verbose url raw osenv
+231 verbose url resolving [ 'https://registry.npmjs.org/', './osenv' ]
+232 verbose url resolved https://registry.npmjs.org/osenv
+233 silly registry.get cb [ 304, undefined ]
+234 verbose etag osenv from cache
+235 verbose url raw path-is-inside
+236 verbose url resolving [ 'https://registry.npmjs.org/', './path-is-inside' ]
+237 verbose url resolved https://registry.npmjs.org/path-is-inside
+238 silly registry.get cb [ 304, undefined ]
+239 verbose etag path-is-inside from cache
+240 verbose url raw read
+241 verbose url resolving [ 'https://registry.npmjs.org/', './read' ]
+242 verbose url resolved https://registry.npmjs.org/read
+243 silly registry.get cb [ 304, undefined ]
+244 verbose etag read from cache
+245 verbose url raw read-installed
+246 verbose url resolving [ 'https://registry.npmjs.org/', './read-installed' ]
+247 verbose url resolved https://registry.npmjs.org/read-installed
+248 silly registry.get cb [ 304, undefined ]
+249 verbose etag read-installed from cache
+250 verbose url raw read-package-json
+251 verbose url resolving [ 'https://registry.npmjs.org/', './read-package-json' ]
+252 verbose url resolved https://registry.npmjs.org/read-package-json
+253 silly registry.get cb [ 304, undefined ]
+254 verbose etag read-package-json from cache
+255 verbose url raw retry
+256 verbose url resolving [ 'https://registry.npmjs.org/', './retry' ]
+257 verbose url resolved https://registry.npmjs.org/retry
+258 silly registry.get cb [ 304, undefined ]
+259 verbose etag retry from cache
+260 verbose url raw request
+261 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+262 verbose url resolved https://registry.npmjs.org/request
+263 silly registry.get cb [ 304, undefined ]
+264 verbose etag request from cache
+265 verbose url raw rimraf
+266 verbose url resolving [ 'https://registry.npmjs.org/', './rimraf' ]
+267 verbose url resolved https://registry.npmjs.org/rimraf
+268 silly registry.get cb [ 304, undefined ]
+269 verbose etag rimraf from cache
+270 verbose url raw semver
+271 verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+272 verbose url resolved https://registry.npmjs.org/semver
+273 silly registry.get cb [ 304, undefined ]
+274 verbose etag semver from cache
+275 verbose url raw sha
+276 verbose url resolving [ 'https://registry.npmjs.org/', './sha' ]
+277 verbose url resolved https://registry.npmjs.org/sha
+278 silly registry.get cb [ 304, undefined ]
+279 verbose etag sha from cache
+280 verbose url raw slide
+281 verbose url resolving [ 'https://registry.npmjs.org/', './slide' ]
+282 verbose url resolved https://registry.npmjs.org/slide
+283 silly registry.get cb [ 304, undefined ]
+284 verbose etag slide from cache
+285 verbose url raw sorted-object
+286 verbose url resolving [ 'https://registry.npmjs.org/', './sorted-object' ]
+287 verbose url resolved https://registry.npmjs.org/sorted-object
+288 silly registry.get cb [ 304, undefined ]
+289 verbose etag sorted-object from cache
+290 verbose url raw tar
+291 verbose url resolving [ 'https://registry.npmjs.org/', './tar' ]
+292 verbose url resolved https://registry.npmjs.org/tar
+293 silly registry.get cb [ 304, undefined ]
+294 verbose etag tar from cache
+295 verbose url raw text-table
+296 verbose url resolving [ 'https://registry.npmjs.org/', './text-table' ]
+297 verbose url resolved https://registry.npmjs.org/text-table
+298 silly registry.get cb [ 304, undefined ]
+299 verbose etag text-table from cache
+300 verbose url raw uid-number
+301 verbose url resolving [ 'https://registry.npmjs.org/', './uid-number' ]
+302 verbose url resolved https://registry.npmjs.org/uid-number
+303 silly registry.get cb [ 304, undefined ]
+304 verbose etag uid-number from cache
+305 verbose url raw which
+306 verbose url resolving [ 'https://registry.npmjs.org/', './which' ]
+307 verbose url resolved https://registry.npmjs.org/which
+308 silly registry.get cb [ 304, undefined ]
+309 verbose etag which from cache
+310 verbose url raw nopt
+311 verbose url resolving [ 'https://registry.npmjs.org/', './nopt' ]
+312 verbose url resolved https://registry.npmjs.org/nopt
+313 silly registry.get cb [ 304, undefined ]
+314 verbose etag nopt from cache
+315 verbose registry.get glob not expired, no request
+316 verbose url raw lodash
+317 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+318 verbose url resolved https://registry.npmjs.org/lodash
+319 silly registry.get cb [ 304, undefined ]
+320 verbose etag lodash from cache
+321 verbose url raw inherits
+322 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+323 verbose url resolved https://registry.npmjs.org/inherits
+324 silly registry.get cb [ 304, undefined ]
+325 verbose etag inherits from cache
+326 verbose registry.get minimatch not expired, no request
+327 verbose url raw inherits
+328 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+329 verbose url resolved https://registry.npmjs.org/inherits
+330 silly registry.get cb [ 304, undefined ]
+331 verbose etag inherits from cache
+332 verbose registry.get npmlog not expired, no request
+333 verbose registry.get semver not expired, no request
+334 verbose registry.get ansi not expired, no request
+335 verbose url raw inherits
+336 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+337 verbose url resolved https://registry.npmjs.org/inherits
+338 silly registry.get cb [ 304, undefined ]
+339 verbose etag inherits from cache
+340 verbose registry.get block-stream not expired, no request
+341 verbose registry.get fstream not expired, no request
+342 verbose registry.get abbrev not expired, no request
+343 verbose registry.get mkdirp not expired, no request
+344 verbose registry.get graceful-fs not expired, no request
+345 verbose url raw fstream-ignore
+346 verbose url resolving [ 'https://registry.npmjs.org/', './fstream-ignore' ]
+347 verbose url resolved https://registry.npmjs.org/fstream-ignore
+348 silly registry.get cb [ 304, undefined ]
+349 verbose etag fstream-ignore from cache
+350 verbose registry.get rimraf not expired, no request
+351 verbose registry.get mkdirp not expired, no request
+352 verbose registry.get graceful-fs not expired, no request
+353 verbose registry.get lru-cache not expired, no request
+354 verbose url raw sigmund
+355 verbose url resolving [ 'https://registry.npmjs.org/', './sigmund' ]
+356 verbose url resolved https://registry.npmjs.org/sigmund
+357 silly registry.get cb [ 304, undefined ]
+358 verbose etag sigmund from cache
+359 verbose registry.get request not expired, no request
+360 verbose registry.get graceful-fs not expired, no request
+361 verbose registry.get slide not expired, no request
+362 verbose registry.get chownr not expired, no request
+363 verbose registry.get semver not expired, no request
+364 verbose registry.get mkdirp not expired, no request
+365 verbose registry.get rimraf not expired, no request
+366 verbose registry.get retry not expired, no request
+367 verbose registry.get npmlog not expired, no request
+368 verbose url raw config-chain
+369 verbose url resolving [ 'https://registry.npmjs.org/', './config-chain' ]
+370 verbose url resolved https://registry.npmjs.org/config-chain
+371 silly registry.get cb [ 304, undefined ]
+372 verbose etag config-chain from cache
+373 verbose registry.get once not expired, no request
+374 verbose registry.get mkdirp not expired, no request
+375 verbose registry.get osenv not expired, no request
+376 verbose registry.get nopt not expired, no request
+377 verbose registry.get semver not expired, no request
+378 verbose registry.get ini not expired, no request
+379 verbose registry.get glob not expired, no request
+380 verbose registry.get graceful-fs not expired, no request
+381 verbose registry.get fstream not expired, no request
+382 verbose registry.get mkdirp not expired, no request
+383 verbose registry.get minimatch not expired, no request
+384 verbose registry.get nopt not expired, no request
+385 verbose registry.get npmlog not expired, no request
+386 verbose registry.get osenv not expired, no request
+387 verbose registry.get request not expired, no request
+388 verbose registry.get rimraf not expired, no request
+389 verbose registry.get semver not expired, no request
+390 verbose registry.get tar not expired, no request
+391 verbose registry.get which not expired, no request
+392 verbose registry.get read-package-json not expired, no request
+393 verbose registry.get slide not expired, no request
+394 verbose url raw util-extend
+395 verbose url resolving [ 'https://registry.npmjs.org/', './util-extend' ]
+396 verbose url resolved https://registry.npmjs.org/util-extend
+397 silly registry.get cb [ 304, undefined ]
+398 verbose etag util-extend from cache
+399 verbose registry.get semver not expired, no request
+400 verbose registry.get graceful-fs not expired, no request
+401 verbose url raw mute-stream
+402 verbose url resolving [ 'https://registry.npmjs.org/', './mute-stream' ]
+403 verbose url resolved https://registry.npmjs.org/mute-stream
+404 silly registry.get cb [ 304, undefined ]
+405 verbose etag mute-stream from cache
+406 verbose registry.get glob not expired, no request
+407 verbose registry.get lru-cache not expired, no request
+408 verbose url raw normalize-package-data
+409 verbose url resolving [ 'https://registry.npmjs.org/', './normalize-package-data' ]
+410 verbose url resolved https://registry.npmjs.org/normalize-package-data
+411 silly registry.get cb [ 304, undefined ]
+412 verbose etag normalize-package-data from cache
+413 verbose registry.get graceful-fs not expired, no request
+414 verbose registry.get graceful-fs not expired, no request
+415 verbose url raw readable-stream
+416 verbose url resolving [ 'https://registry.npmjs.org/', './readable-stream' ]
+417 verbose url resolved https://registry.npmjs.org/readable-stream
+418 silly registry.get cb [ 304, undefined ]
+419 verbose etag readable-stream from cache
+420 verbose url raw inherits
+421 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+422 verbose url resolved https://registry.npmjs.org/inherits
+423 silly registry.get cb [ 304, undefined ]
+424 verbose etag inherits from cache
+425 verbose url raw inherits
+426 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+427 verbose url resolved https://registry.npmjs.org/inherits
+428 silly registry.get cb [ 304, undefined ]
+429 verbose etag inherits from cache
+430 verbose url raw inherits
+431 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+432 verbose url resolved https://registry.npmjs.org/inherits
+433 silly registry.get cb [ 304, undefined ]
+434 verbose etag inherits from cache
+435 verbose registry.get minimatch not expired, no request
+436 verbose url raw inherits
+437 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+438 verbose url resolved https://registry.npmjs.org/inherits
+439 verbose url raw json-stringify-safe
+440 verbose url resolving [ 'https://registry.npmjs.org/', './json-stringify-safe' ]
+441 verbose url resolved https://registry.npmjs.org/json-stringify-safe
+442 silly registry.get cb [ 304, undefined ]
+443 verbose etag json-stringify-safe from cache
+444 verbose url raw forever-agent
+445 verbose url resolving [ 'https://registry.npmjs.org/', './forever-agent' ]
+446 verbose url resolved https://registry.npmjs.org/forever-agent
+447 silly registry.get cb [ 304, undefined ]
+448 verbose etag forever-agent from cache
+449 verbose url raw qs
+450 verbose url resolving [ 'https://registry.npmjs.org/', './qs' ]
+451 verbose url resolved https://registry.npmjs.org/qs
+452 silly registry.get cb [ 304, undefined ]
+453 verbose etag qs from cache
+454 verbose url raw node-uuid
+455 verbose url resolving [ 'https://registry.npmjs.org/', './node-uuid' ]
+456 verbose url resolved https://registry.npmjs.org/node-uuid
+457 silly registry.get cb [ 304, undefined ]
+458 verbose etag node-uuid from cache
+459 verbose url raw mime
+460 verbose url resolving [ 'https://registry.npmjs.org/', './mime' ]
+461 verbose url resolved https://registry.npmjs.org/mime
+462 silly registry.get cb [ 304, undefined ]
+463 verbose etag mime from cache
+464 verbose url raw form-data
+465 verbose url resolving [ 'https://registry.npmjs.org/', './form-data' ]
+466 verbose url resolved https://registry.npmjs.org/form-data
+467 silly registry.get cb [ 304, undefined ]
+468 verbose etag form-data from cache
+469 verbose url raw tunnel-agent
+470 verbose url resolving [ 'https://registry.npmjs.org/', './tunnel-agent' ]
+471 verbose url resolved https://registry.npmjs.org/tunnel-agent
+472 silly registry.get cb [ 304, undefined ]
+473 verbose etag tunnel-agent from cache
+474 verbose url raw tough-cookie
+475 verbose url resolving [ 'https://registry.npmjs.org/', './tough-cookie' ]
+476 verbose url resolved https://registry.npmjs.org/tough-cookie
+477 silly registry.get cb [ 304, undefined ]
+478 verbose etag tough-cookie from cache
+479 verbose url raw http-signature
+480 verbose url resolving [ 'https://registry.npmjs.org/', './http-signature' ]
+481 verbose url resolved https://registry.npmjs.org/http-signature
+482 silly registry.get cb [ 304, undefined ]
+483 verbose etag http-signature from cache
+484 verbose url raw oauth-sign
+485 verbose url resolving [ 'https://registry.npmjs.org/', './oauth-sign' ]
+486 verbose url resolved https://registry.npmjs.org/oauth-sign
+487 silly registry.get cb [ 304, undefined ]
+488 verbose etag oauth-sign from cache
+489 verbose url raw hawk
+490 verbose url resolving [ 'https://registry.npmjs.org/', './hawk' ]
+491 verbose url resolved https://registry.npmjs.org/hawk
+492 silly registry.get cb [ 304, undefined ]
+493 verbose etag hawk from cache
+494 verbose url raw aws-sign2
+495 verbose url resolving [ 'https://registry.npmjs.org/', './aws-sign2' ]
+496 verbose url resolved https://registry.npmjs.org/aws-sign2
+497 silly registry.get cb [ 304, undefined ]
+498 verbose etag aws-sign2 from cache
+499 verbose url raw json-stringify-safe
+500 verbose url resolving [ 'https://registry.npmjs.org/', './json-stringify-safe' ]
+501 verbose url resolved https://registry.npmjs.org/json-stringify-safe
+502 silly registry.get cb [ 304, undefined ]
+503 verbose etag json-stringify-safe from cache
+504 verbose url raw qs
+505 verbose url resolving [ 'https://registry.npmjs.org/', './qs' ]
+506 verbose url resolved https://registry.npmjs.org/qs
+507 silly registry.get cb [ 304, undefined ]
+508 verbose etag qs from cache
+509 verbose url raw forever-agent
+510 verbose url resolving [ 'https://registry.npmjs.org/', './forever-agent' ]
+511 verbose url resolved https://registry.npmjs.org/forever-agent
+512 silly registry.get cb [ 304, undefined ]
+513 verbose etag forever-agent from cache
+514 verbose url raw node-uuid
+515 verbose url resolving [ 'https://registry.npmjs.org/', './node-uuid' ]
+516 verbose url resolved https://registry.npmjs.org/node-uuid
+517 silly registry.get cb [ 304, undefined ]
+518 verbose etag node-uuid from cache
+519 verbose url raw mime
+520 verbose url resolving [ 'https://registry.npmjs.org/', './mime' ]
+521 verbose url resolved https://registry.npmjs.org/mime
+522 silly registry.get cb [ 304, undefined ]
+523 verbose etag mime from cache
+524 verbose url raw tunnel-agent
+525 verbose url resolving [ 'https://registry.npmjs.org/', './tunnel-agent' ]
+526 verbose url resolved https://registry.npmjs.org/tunnel-agent
+527 silly registry.get cb [ 304, undefined ]
+528 verbose etag tunnel-agent from cache
+529 verbose url raw form-data
+530 verbose url resolving [ 'https://registry.npmjs.org/', './form-data' ]
+531 verbose url resolved https://registry.npmjs.org/form-data
+532 silly registry.get cb [ 304, undefined ]
+533 verbose etag form-data from cache
+534 verbose url raw http-signature
+535 verbose url resolving [ 'https://registry.npmjs.org/', './http-signature' ]
+536 verbose url resolved https://registry.npmjs.org/http-signature
+537 silly registry.get cb [ 304, undefined ]
+538 verbose etag http-signature from cache
+539 verbose url raw oauth-sign
+540 verbose url resolving [ 'https://registry.npmjs.org/', './oauth-sign' ]
+541 verbose url resolved https://registry.npmjs.org/oauth-sign
+542 silly registry.get cb [ 304, undefined ]
+543 verbose etag oauth-sign from cache
+544 verbose url raw tough-cookie
+545 verbose url resolving [ 'https://registry.npmjs.org/', './tough-cookie' ]
+546 verbose url resolved https://registry.npmjs.org/tough-cookie
+547 silly registry.get cb [ 304, undefined ]
+548 verbose etag tough-cookie from cache
+549 verbose url raw aws-sign2
+550 verbose url resolving [ 'https://registry.npmjs.org/', './aws-sign2' ]
+551 verbose url resolved https://registry.npmjs.org/aws-sign2
+552 silly registry.get cb [ 304, undefined ]
+553 verbose etag aws-sign2 from cache
+554 verbose url raw hawk
+555 verbose url resolving [ 'https://registry.npmjs.org/', './hawk' ]
+556 verbose url resolved https://registry.npmjs.org/hawk
+557 silly registry.get cb [ 304, undefined ]
+558 verbose etag hawk from cache
+559 verbose registry.get fstream not expired, no request
+560 verbose registry.get inherits not expired, no request
+561 verbose registry.get minimatch not expired, no request
+562 verbose registry.get lru-cache not expired, no request
+563 verbose registry.get sigmund not expired, no request
+564 verbose url raw proto-list
+565 verbose url resolving [ 'https://registry.npmjs.org/', './proto-list' ]
+566 verbose url resolved https://registry.npmjs.org/proto-list
+567 silly registry.get cb [ 304, undefined ]
+568 verbose etag proto-list from cache
+569 verbose registry.get ini not expired, no request
+570 verbose registry.get semver not expired, no request
+571 verbose registry.get github-url-from-git not expired, no request
+572 verbose registry.get github-url-from-username-repo not expired, no request
+573 verbose url raw core-util-is
+574 verbose url resolving [ 'https://registry.npmjs.org/', './core-util-is' ]
+575 verbose url resolved https://registry.npmjs.org/core-util-is
+576 silly registry.get cb [ 304, undefined ]
+577 verbose etag core-util-is from cache
+578 verbose url raw isarray
+579 verbose url resolving [ 'https://registry.npmjs.org/', './isarray' ]
+580 verbose url resolved https://registry.npmjs.org/isarray
+581 silly registry.get cb [ 304, undefined ]
+582 verbose etag isarray from cache
+583 verbose url raw string_decoder
+584 verbose url resolving [ 'https://registry.npmjs.org/', './string_decoder' ]
+585 verbose url resolved https://registry.npmjs.org/string_decoder
+586 silly registry.get cb [ 304, undefined ]
+587 verbose etag string_decoder from cache
+588 verbose registry.get inherits not expired, no request
+589 verbose url raw combined-stream
+590 verbose url resolving [ 'https://registry.npmjs.org/', './combined-stream' ]
+591 verbose url resolved https://registry.npmjs.org/combined-stream
+592 silly registry.get cb [ 304, undefined ]
+593 verbose etag combined-stream from cache
+594 verbose registry.get mime not expired, no request
+595 verbose url raw async
+596 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+597 verbose url resolved https://registry.npmjs.org/async
+598 silly registry.get cb [ 304, undefined ]
+599 verbose etag async from cache
+600 verbose url raw punycode
+601 verbose url resolving [ 'https://registry.npmjs.org/', './punycode' ]
+602 verbose url resolved https://registry.npmjs.org/punycode
+603 silly registry.get cb [ 304, undefined ]
+604 verbose etag punycode from cache
+605 verbose url raw assert-plus
+606 verbose url resolving [ 'https://registry.npmjs.org/', './assert-plus' ]
+607 verbose url resolved https://registry.npmjs.org/assert-plus
+608 silly registry.get cb [ 304, undefined ]
+609 verbose etag assert-plus from cache
+610 verbose url raw asn1
+611 verbose url resolving [ 'https://registry.npmjs.org/', './asn1' ]
+612 verbose url resolved https://registry.npmjs.org/asn1
+613 silly registry.get cb [ 304, undefined ]
+614 verbose etag asn1 from cache
+615 verbose url raw ctype
+616 verbose url resolving [ 'https://registry.npmjs.org/', './ctype' ]
+617 verbose url resolved https://registry.npmjs.org/ctype
+618 silly registry.get cb [ 304, undefined ]
+619 verbose etag ctype from cache
+620 verbose url raw combined-stream
+621 verbose url resolving [ 'https://registry.npmjs.org/', './combined-stream' ]
+622 verbose url resolved https://registry.npmjs.org/combined-stream
+623 silly registry.get cb [ 304, undefined ]
+624 verbose etag combined-stream from cache
+625 verbose registry.get mime not expired, no request
+626 verbose url raw async
+627 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+628 verbose url resolved https://registry.npmjs.org/async
+629 silly registry.get cb [ 304, undefined ]
+630 verbose etag async from cache
+631 verbose url raw assert-plus
+632 verbose url resolving [ 'https://registry.npmjs.org/', './assert-plus' ]
+633 verbose url resolved https://registry.npmjs.org/assert-plus
+634 silly registry.get cb [ 304, undefined ]
+635 verbose etag assert-plus from cache
+636 verbose url raw asn1
+637 verbose url resolving [ 'https://registry.npmjs.org/', './asn1' ]
+638 verbose url resolved https://registry.npmjs.org/asn1
+639 silly registry.get cb [ 304, undefined ]
+640 verbose etag asn1 from cache
+641 verbose url raw ctype
+642 verbose url resolving [ 'https://registry.npmjs.org/', './ctype' ]
+643 verbose url resolved https://registry.npmjs.org/ctype
+644 silly registry.get cb [ 304, undefined ]
+645 verbose etag ctype from cache
+646 verbose url raw punycode
+647 verbose url resolving [ 'https://registry.npmjs.org/', './punycode' ]
+648 verbose url resolved https://registry.npmjs.org/punycode
+649 silly registry.get cb [ 304, undefined ]
+650 verbose etag punycode from cache
+651 verbose url raw delayed-stream
+652 verbose url resolving [ 'https://registry.npmjs.org/', './delayed-stream' ]
+653 verbose url resolved https://registry.npmjs.org/delayed-stream
+654 silly registry.get cb [ 304, undefined ]
+655 verbose etag delayed-stream from cache
+656 verbose url raw delayed-stream
+657 verbose url resolving [ 'https://registry.npmjs.org/', './delayed-stream' ]
+658 verbose url resolved https://registry.npmjs.org/delayed-stream
+659 silly registry.get cb [ 304, undefined ]
+660 verbose etag delayed-stream from cache
+661 info outdated updating [ [ '/usr/local/lib', 'express', '2.5.8', '4.0.0', '4.0.0', '*' ],
+661 info outdated   [ '/usr/local/lib/node_modules/handlebars',
+661 info outdated     'optimist',
+661 info outdated     '0.3.7',
+661 info outdated     '0.3.7',
+661 info outdated     '0.6.1',
+661 info outdated     '~0.3' ],
+661 info outdated   [ '/usr/local/lib/node_modules/handlebars',
+661 info outdated     'uglify-js',
+661 info outdated     '2.3.6',
+661 info outdated     '2.3.6',
+661 info outdated     '2.4.13',
+661 info outdated     '~2.3' ],
+661 info outdated   [ '/usr/local/lib/node_modules/hbs',
+661 info outdated     'handlebars',
+661 info outdated     '1.3.0',
+661 info outdated     '1.3.0',
+661 info outdated     '2.0.0-alpha.2',
+661 info outdated     '1.3.0' ],
+661 info outdated   [ '/usr/local/lib/node_modules/hbs',
+661 info outdated     'walk',
+661 info outdated     '2.2.1',
+661 info outdated     '2.2.1',
+661 info outdated     '2.3.1',
+661 info outdated     '2.2.1' ],
+661 info outdated   [ '/usr/local/lib/node_modules/grunt-cli',
+661 info outdated     'nopt',
+661 info outdated     '1.0.10',
+661 info outdated     '1.0.10',
+661 info outdated     '2.2.0',
+661 info outdated     '~1.0.10' ],
+661 info outdated   [ '/usr/local/lib/node_modules/grunt-cli',
+661 info outdated     'resolve',
+661 info outdated     '0.3.1',
+661 info outdated     '0.3.1',
+661 info outdated     '0.6.3',
+661 info outdated     '~0.3.1' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm',
+661 info outdated     'editor',
+661 info outdated     '0.0.5',
+661 info outdated     '0.0.5',
+661 info outdated     '0.1.0',
+661 info outdated     '0.0.5' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm',
+661 info outdated     'github-url-from-username-repo',
+661 info outdated     '0.0.2',
+661 info outdated     '0.0.2',
+661 info outdated     '0.1.0',
+661 info outdated     '0.0.2' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm',
+661 info outdated     'init-package-json',
+661 info outdated     '0.0.15',
+661 info outdated     '0.0.15',
+661 info outdated     '0.0.16',
+661 info outdated     '0.0.15' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm',
+661 info outdated     'request',
+661 info outdated     '2.30.0',
+661 info outdated     '2.30.0',
+661 info outdated     '2.34.0',
+661 info outdated     '~2.30.0' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data',
+661 info outdated     'github-url-from-username-repo',
+661 info outdated     '0.0.2',
+661 info outdated     '0.0.2',
+661 info outdated     '0.1.0',
+661 info outdated     '0.0.2' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/sha/node_modules/readable-stream',
+661 info outdated     'string_decoder',
+661 info outdated     '0.10.25-1',
+661 info outdated     '0.10.25',
+661 info outdated     '0.10.25-1',
+661 info outdated     '~0.10.x' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request',
+661 info outdated     'tunnel-agent',
+661 info outdated     '0.3.0',
+661 info outdated     '0.3.0',
+661 info outdated     '0.4.0',
+661 info outdated     '~0.3.0' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request',
+661 info outdated     'oauth-sign',
+661 info outdated     '0.3.0',
+661 info outdated     '0.3.0',
+661 info outdated     '0.4.0',
+661 info outdated     '~0.3.0' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request',
+661 info outdated     'hawk',
+661 info outdated     '1.0.0',
+661 info outdated     '1.0.0',
+661 info outdated     '2.1.3',
+661 info outdated     '~1.0.0' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request/node_modules/http-signature',
+661 info outdated     'assert-plus',
+661 info outdated     '0.1.2',
+661 info outdated     '0.1.2',
+661 info outdated     '0.1.5',
+661 info outdated     '0.1.2' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request/node_modules/http-signature',
+661 info outdated     'asn1',
+661 info outdated     '0.1.11',
+661 info outdated     '0.1.11',
+661 info outdated     '0.2.1',
+661 info outdated     '0.1.11' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request/node_modules/http-signature',
+661 info outdated     'ctype',
+661 info outdated     '0.5.2',
+661 info outdated     '0.5.2',
+661 info outdated     '0.5.3',
+661 info outdated     '0.5.2' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request/node_modules/form-data',
+661 info outdated     'async',
+661 info outdated     '0.2.10',
+661 info outdated     '0.2.10',
+661 info outdated     '0.7.0',
+661 info outdated     '~0.2.9' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request',
+661 info outdated     'oauth-sign',
+661 info outdated     '0.3.0',
+661 info outdated     '0.3.0',
+661 info outdated     '0.4.0',
+661 info outdated     '~0.3.0' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request',
+661 info outdated     'hawk',
+661 info outdated     '1.0.0',
+661 info outdated     '1.0.0',
+661 info outdated     '2.1.3',
+661 info outdated     '~1.0.0' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request',
+661 info outdated     'tunnel-agent',
+661 info outdated     '0.3.0',
+661 info outdated     '0.3.0',
+661 info outdated     '0.4.0',
+661 info outdated     '~0.3.0' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request/node_modules/http-signature',
+661 info outdated     'assert-plus',
+661 info outdated     '0.1.2',
+661 info outdated     '0.1.2',
+661 info outdated     '0.1.5',
+661 info outdated     '0.1.2' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request/node_modules/http-signature',
+661 info outdated     'ctype',
+661 info outdated     '0.5.2',
+661 info outdated     '0.5.2',
+661 info outdated     '0.5.3',
+661 info outdated     '0.5.2' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request/node_modules/http-signature',
+661 info outdated     'asn1',
+661 info outdated     '0.1.11',
+661 info outdated     '0.1.11',
+661 info outdated     '0.2.1',
+661 info outdated     '0.1.11' ],
+661 info outdated   [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request/node_modules/form-data',
+661 info outdated     'async',
+661 info outdated     '0.2.10',
+661 info outdated     '0.2.10',
+661 info outdated     '0.7.0',
+661 info outdated     '~0.2.9' ] ]
+662 verbose install where,what [ '/usr/local/lib', [ 'express@4.0.0' ] ]
+663 verbose install where,what [ '/usr/local/lib/node_modules/handlebars',
+663 verbose install   [ 'optimist@0.3.7' ] ]
+664 verbose install where,what [ '/usr/local/lib/node_modules/handlebars',
+664 verbose install   [ 'uglify-js@2.3.6' ] ]
+665 verbose install where,what [ '/usr/local/lib/node_modules/hbs', [ 'handlebars@1.3.0' ] ]
+666 verbose install where,what [ '/usr/local/lib/node_modules/hbs', [ 'walk@2.2.1' ] ]
+667 verbose install where,what [ '/usr/local/lib/node_modules/grunt-cli', [ 'nopt@1.0.10' ] ]
+668 verbose install where,what [ '/usr/local/lib/node_modules/grunt-cli', [ 'resolve@0.3.1' ] ]
+669 verbose install where,what [ '/usr/local/lib/node_modules/npm', [ 'editor@0.0.5' ] ]
+670 verbose install where,what [ '/usr/local/lib/node_modules/npm',
+670 verbose install   [ 'github-url-from-username-repo@0.0.2' ] ]
+671 verbose install where,what [ '/usr/local/lib/node_modules/npm',
+671 verbose install   [ 'init-package-json@0.0.15' ] ]
+672 verbose install where,what [ '/usr/local/lib/node_modules/npm', [ 'request@2.30.0' ] ]
+673 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data',
+673 verbose install   [ 'github-url-from-username-repo@0.0.2' ] ]
+674 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/sha/node_modules/readable-stream',
+674 verbose install   [ 'string_decoder@0.10.25' ] ]
+675 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request',
+675 verbose install   [ 'tunnel-agent@0.3.0' ] ]
+676 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request',
+676 verbose install   [ 'oauth-sign@0.3.0' ] ]
+677 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request',
+677 verbose install   [ 'hawk@1.0.0' ] ]
+678 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request/node_modules/http-signature',
+678 verbose install   [ 'assert-plus@0.1.2' ] ]
+679 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request/node_modules/http-signature',
+679 verbose install   [ 'asn1@0.1.11' ] ]
+680 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request/node_modules/http-signature',
+680 verbose install   [ 'ctype@0.5.2' ] ]
+681 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/node_modules/request/node_modules/form-data',
+681 verbose install   [ 'async@0.2.10' ] ]
+682 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request',
+682 verbose install   [ 'oauth-sign@0.3.0' ] ]
+683 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request',
+683 verbose install   [ 'hawk@1.0.0' ] ]
+684 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request',
+684 verbose install   [ 'tunnel-agent@0.3.0' ] ]
+685 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request/node_modules/http-signature',
+685 verbose install   [ 'assert-plus@0.1.2' ] ]
+686 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request/node_modules/http-signature',
+686 verbose install   [ 'ctype@0.5.2' ] ]
+687 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request/node_modules/http-signature',
+687 verbose install   [ 'asn1@0.1.11' ] ]
+688 verbose install where,what [ '/usr/local/lib/node_modules/npm/node_modules/node-gyp/node_modules/request/node_modules/form-data',
+688 verbose install   [ 'async@0.2.10' ] ]
+689 verbose readDependencies using package.json deps
+690 verbose cache add [ 'optimist@0.3.7', null ]
+691 verbose cache add name=undefined spec="optimist@0.3.7" args=["optimist@0.3.7",null]
+692 verbose parsed url { protocol: null,
+692 verbose parsed url   slashes: null,
+692 verbose parsed url   auth: null,
+692 verbose parsed url   host: null,
+692 verbose parsed url   port: null,
+692 verbose parsed url   hostname: null,
+692 verbose parsed url   hash: null,
+692 verbose parsed url   search: null,
+692 verbose parsed url   query: null,
+692 verbose parsed url   pathname: 'optimist@0.3.7',
+692 verbose parsed url   path: 'optimist@0.3.7',
+692 verbose parsed url   href: 'optimist@0.3.7' }
+693 verbose cache add name="optimist" spec="0.3.7" args=["optimist","0.3.7"]
+694 verbose parsed url { protocol: null,
+694 verbose parsed url   slashes: null,
+694 verbose parsed url   auth: null,
+694 verbose parsed url   host: null,
+694 verbose parsed url   port: null,
+694 verbose parsed url   hostname: null,
+694 verbose parsed url   hash: null,
+694 verbose parsed url   search: null,
+694 verbose parsed url   query: null,
+694 verbose parsed url   pathname: '0.3.7',
+694 verbose parsed url   path: '0.3.7',
+694 verbose parsed url   href: '0.3.7' }
+695 verbose addNamed [ 'optimist', '0.3.7' ]
+696 verbose addNamed [ '0.3.7', '0.3.7' ]
+697 verbose readDependencies using package.json deps
+698 verbose cache add [ 'uglify-js@2.3.6', null ]
+699 verbose cache add name=undefined spec="uglify-js@2.3.6" args=["uglify-js@2.3.6",null]
+700 verbose parsed url { protocol: null,
+700 verbose parsed url   slashes: null,
+700 verbose parsed url   auth: null,
+700 verbose parsed url   host: null,
+700 verbose parsed url   port: null,
+700 verbose parsed url   hostname: null,
+700 verbose parsed url   hash: null,
+700 verbose parsed url   search: null,
+700 verbose parsed url   query: null,
+700 verbose parsed url   pathname: 'uglify-js@2.3.6',
+700 verbose parsed url   path: 'uglify-js@2.3.6',
+700 verbose parsed url   href: 'uglify-js@2.3.6' }
+701 verbose cache add name="uglify-js" spec="2.3.6" args=["uglify-js","2.3.6"]
+702 verbose parsed url { protocol: null,
+702 verbose parsed url   slashes: null,
+702 verbose parsed url   auth: null,
+702 verbose parsed url   host: null,
+702 verbose parsed url   port: null,
+702 verbose parsed url   hostname: null,
+702 verbose parsed url   hash: null,
+702 verbose parsed url   search: null,
+702 verbose parsed url   query: null,
+702 verbose parsed url   pathname: '2.3.6',
+702 verbose parsed url   path: '2.3.6',
+702 verbose parsed url   href: '2.3.6' }
+703 verbose addNamed [ 'uglify-js', '2.3.6' ]
+704 verbose addNamed [ '2.3.6', '2.3.6' ]
+705 verbose readDependencies using package.json deps
+706 verbose cache add [ 'handlebars@1.3.0', null ]
+707 verbose cache add name=undefined spec="handlebars@1.3.0" args=["handlebars@1.3.0",null]
+708 verbose parsed url { protocol: null,
+708 verbose parsed url   slashes: null,
+708 verbose parsed url   auth: null,
+708 verbose parsed url   host: null,
+708 verbose parsed url   port: null,
+708 verbose parsed url   hostname: null,
+708 verbose parsed url   hash: null,
+708 verbose parsed url   search: null,
+708 verbose parsed url   query: null,
+708 verbose parsed url   pathname: 'handlebars@1.3.0',
+708 verbose parsed url   path: 'handlebars@1.3.0',
+708 verbose parsed url   href: 'handlebars@1.3.0' }
+709 verbose cache add name="handlebars" spec="1.3.0" args=["handlebars","1.3.0"]
+710 verbose parsed url { protocol: null,
+710 verbose parsed url   slashes: null,
+710 verbose parsed url   auth: null,
+710 verbose parsed url   host: null,
+710 verbose parsed url   port: null,
+710 verbose parsed url   hostname: null,
+710 verbose parsed url   hash: null,
+710 verbose parsed url   search: null,
+710 verbose parsed url   query: null,
+710 verbose parsed url   pathname: '1.3.0',
+710 verbose parsed url   path: '1.3.0',
+710 verbose parsed url   href: '1.3.0' }
+711 verbose addNamed [ 'handlebars', '1.3.0' ]
+712 verbose addNamed [ '1.3.0', '1.3.0' ]
+713 verbose readDependencies using package.json deps
+714 verbose cache add [ 'walk@2.2.1', null ]
+715 verbose cache add name=undefined spec="walk@2.2.1" args=["walk@2.2.1",null]
+716 verbose parsed url { protocol: null,
+716 verbose parsed url   slashes: null,
+716 verbose parsed url   auth: null,
+716 verbose parsed url   host: null,
+716 verbose parsed url   port: null,
+716 verbose parsed url   hostname: null,
+716 verbose parsed url   hash: null,
+716 verbose parsed url   search: null,
+716 verbose parsed url   query: null,
+716 verbose parsed url   pathname: 'walk@2.2.1',
+716 verbose parsed url   path: 'walk@2.2.1',
+716 verbose parsed url   href: 'walk@2.2.1' }
+717 verbose cache add name="walk" spec="2.2.1" args=["walk","2.2.1"]
+718 verbose parsed url { protocol: null,
+718 verbose parsed url   slashes: null,
+718 verbose parsed url   auth: null,
+718 verbose parsed url   host: null,
+718 verbose parsed url   port: null,
+718 verbose parsed url   hostname: null,
+718 verbose parsed url   hash: null,
+718 verbose parsed url   search: null,
+718 verbose parsed url   query: null,
+718 verbose parsed url   pathname: '2.2.1',
+718 verbose parsed url   path: '2.2.1',
+718 verbose parsed url   href: '2.2.1' }
+719 verbose addNamed [ 'walk', '2.2.1' ]
+720 verbose addNamed [ '2.2.1', '2.2.1' ]
+721 verbose readDependencies using package.json deps
+722 verbose cache add [ 'nopt@1.0.10', null ]
+723 verbose cache add name=undefined spec="nopt@1.0.10" args=["nopt@1.0.10",null]
+724 verbose parsed url { protocol: null,
+724 verbose parsed url   slashes: null,
+724 verbose parsed url   auth: null,
+724 verbose parsed url   host: null,
+724 verbose parsed url   port: null,
+724 verbose parsed url   hostname: null,
+724 verbose parsed url   hash: null,
+724 verbose parsed url   search: null,
+724 verbose parsed url   query: null,
+724 verbose parsed url   pathname: 'nopt@1.0.10',
+724 verbose parsed url   path: 'nopt@1.0.10',
+724 verbose parsed url   href: 'nopt@1.0.10' }
+725 verbose cache add name="nopt" spec="1.0.10" args=["nopt","1.0.10"]
+726 verbose parsed url { protocol: null,
+726 verbose parsed url   slashes: null,
+726 verbose parsed url   auth: null,
+726 verbose parsed url   host: null,
+726 verbose parsed url   port: null,
+726 verbose parsed url   hostname: null,
+726 verbose parsed url   hash: null,
+726 verbose parsed url   search: null,
+726 verbose parsed url   query: null,
+726 verbose parsed url   pathname: '1.0.10',
+726 verbose parsed url   path: '1.0.10',
+726 verbose parsed url   href: '1.0.10' }
+727 verbose addNamed [ 'nopt', '1.0.10' ]
+728 verbose addNamed [ '1.0.10', '1.0.10' ]
+729 verbose readDependencies using package.json deps
+730 verbose cache add [ 'resolve@0.3.1', null ]
+731 verbose cache add name=undefined spec="resolve@0.3.1" args=["resolve@0.3.1",null]
+732 verbose parsed url { protocol: null,
+732 verbose parsed url   slashes: null,
+732 verbose parsed url   auth: null,
+732 verbose parsed url   host: null,
+732 verbose parsed url   port: null,
+732 verbose parsed url   hostname: null,
+732 verbose parsed url   hash: null,
+732 verbose parsed url   search: null,
+732 verbose parsed url   query: null,
+732 verbose parsed url   pathname: 'resolve@0.3.1',
+732 verbose parsed url   path: 'resolve@0.3.1',
+732 verbose parsed url   href: 'resolve@0.3.1' }
+733 verbose cache add name="resolve" spec="0.3.1" args=["resolve","0.3.1"]
+734 verbose parsed url { protocol: null,
+734 verbose parsed url   slashes: null,
+734 verbose parsed url   auth: null,
+734 verbose parsed url   host: null,
+734 verbose parsed url   port: null,
+734 verbose parsed url   hostname: null,
+734 verbose parsed url   hash: null,
+734 verbose parsed url   search: null,
+734 verbose parsed url   query: null,
+734 verbose parsed url   pathname: '0.3.1',
+734 verbose parsed url   path: '0.3.1',
+734 verbose parsed url   href: '0.3.1' }
+735 verbose addNamed [ 'resolve', '0.3.1' ]
+736 verbose addNamed [ '0.3.1', '0.3.1' ]
+737 verbose readDependencies using package.json deps
+738 verbose cache add [ 'editor@0.0.5', null ]
+739 verbose cache add name=undefined spec="editor@0.0.5" args=["editor@0.0.5",null]
+740 verbose parsed url { protocol: null,
+740 verbose parsed url   slashes: null,
+740 verbose parsed url   auth: null,
+740 verbose parsed url   host: null,
+740 verbose parsed url   port: null,
+740 verbose parsed url   hostname: null,
+740 verbose parsed url   hash: null,
+740 verbose parsed url   search: null,
+740 verbose parsed url   query: null,
+740 verbose parsed url   pathname: 'editor@0.0.5',
+740 verbose parsed url   path: 'editor@0.0.5',
+740 verbose parsed url   href: 'editor@0.0.5' }
+741 verbose cache add name="editor" spec="0.0.5" args=["editor","0.0.5"]
+742 verbose parsed url { protocol: null,
+742 verbose parsed url   slashes: null,
+742 verbose parsed url   auth: null,
+742 verbose parsed url   host: null,
+742 verbose parsed url   port: null,
+742 verbose parsed url   hostname: null,
+742 verbose parsed url   hash: null,
+742 verbose parsed url   search: null,
+742 verbose parsed url   query: null,
+742 verbose parsed url   pathname: '0.0.5',
+742 verbose parsed url   path: '0.0.5',
+742 verbose parsed url   href: '0.0.5' }
+743 verbose addNamed [ 'editor', '0.0.5' ]
+744 verbose addNamed [ '0.0.5', '0.0.5' ]
+745 verbose readDependencies using package.json deps
+746 verbose cache add [ 'github-url-from-username-repo@0.0.2', null ]
+747 verbose cache add name=undefined spec="github-url-from-username-repo@0.0.2" args=["github-url-from-username-repo@0.0.2",null]
+748 verbose parsed url { protocol: null,
+748 verbose parsed url   slashes: null,
+748 verbose parsed url   auth: null,
+748 verbose parsed url   host: null,
+748 verbose parsed url   port: null,
+748 verbose parsed url   hostname: null,
+748 verbose parsed url   hash: null,
+748 verbose parsed url   search: null,
+748 verbose parsed url   query: null,
+748 verbose parsed url   pathname: 'github-url-from-username-repo@0.0.2',
+748 verbose parsed url   path: 'github-url-from-username-repo@0.0.2',
+748 verbose parsed url   href: 'github-url-from-username-repo@0.0.2' }
+749 verbose cache add name="github-url-from-username-repo" spec="0.0.2" args=["github-url-from-username-repo","0.0.2"]
+750 verbose parsed url { protocol: null,
+750 verbose parsed url   slashes: null,
+750 verbose parsed url   auth: null,
+750 verbose parsed url   host: null,
+750 verbose parsed url   port: null,
+750 verbose parsed url   hostname: null,
+750 verbose parsed url   hash: null,
+750 verbose parsed url   search: null,
+750 verbose parsed url   query: null,
+750 verbose parsed url   pathname: '0.0.2',
+750 verbose parsed url   path: '0.0.2',
+750 verbose parsed url   href: '0.0.2' }
+751 verbose addNamed [ 'github-url-from-username-repo', '0.0.2' ]
+752 verbose addNamed [ '0.0.2', '0.0.2' ]
+753 verbose readDependencies using package.json deps
+754 verbose cache add [ 'init-package-json@0.0.15', null ]
+755 verbose cache add name=undefined spec="init-package-json@0.0.15" args=["init-package-json@0.0.15",null]
+756 verbose parsed url { protocol: null,
+756 verbose parsed url   slashes: null,
+756 verbose parsed url   auth: null,
+756 verbose parsed url   host: null,
+756 verbose parsed url   port: null,
+756 verbose parsed url   hostname: null,
+756 verbose parsed url   hash: null,
+756 verbose parsed url   search: null,
+756 verbose parsed url   query: null,
+756 verbose parsed url   pathname: 'init-package-json@0.0.15',
+756 verbose parsed url   path: 'init-package-json@0.0.15',
+756 verbose parsed url   href: 'init-package-json@0.0.15' }
+757 verbose cache add name="init-package-json" spec="0.0.15" args=["init-package-json","0.0.15"]
+758 verbose parsed url { protocol: null,
+758 verbose parsed url   slashes: null,
+758 verbose parsed url   auth: null,
+758 verbose parsed url   host: null,
+758 verbose parsed url   port: null,
+758 verbose parsed url   hostname: null,
+758 verbose parsed url   hash: null,
+758 verbose parsed url   search: null,
+758 verbose parsed url   query: null,
+758 verbose parsed url   pathname: '0.0.15',
+758 verbose parsed url   path: '0.0.15',
+758 verbose parsed url   href: '0.0.15' }
+759 verbose addNamed [ 'init-package-json', '0.0.15' ]
+760 verbose addNamed [ '0.0.15', '0.0.15' ]
+761 verbose readDependencies using package.json deps
+762 verbose cache add [ 'request@2.30.0', null ]
+763 verbose cache add name=undefined spec="request@2.30.0" args=["request@2.30.0",null]
+764 verbose parsed url { protocol: null,
+764 verbose parsed url   slashes: null,
+764 verbose parsed url   auth: null,
+764 verbose parsed url   host: null,
+764 verbose parsed url   port: null,
+764 verbose parsed url   hostname: null,
+764 verbose parsed url   hash: null,
+764 verbose parsed url   search: null,
+764 verbose parsed url   query: null,
+764 verbose parsed url   pathname: 'request@2.30.0',
+764 verbose parsed url   path: 'request@2.30.0',
+764 verbose parsed url   href: 'request@2.30.0' }
+765 verbose cache add name="request" spec="2.30.0" args=["request","2.30.0"]
+766 verbose parsed url { protocol: null,
+766 verbose parsed url   slashes: null,
+766 verbose parsed url   auth: null,
+766 verbose parsed url   host: null,
+766 verbose parsed url   port: null,
+766 verbose parsed url   hostname: null,
+766 verbose parsed url   hash: null,
+766 verbose parsed url   search: null,
+766 verbose parsed url   query: null,
+766 verbose parsed url   pathname: '2.30.0',
+766 verbose parsed url   path: '2.30.0',
+766 verbose parsed url   href: '2.30.0' }
+767 verbose addNamed [ 'request', '2.30.0' ]
+768 verbose addNamed [ '2.30.0', '2.30.0' ]
+769 verbose readDependencies using package.json deps
+770 verbose cache add [ 'github-url-from-username-repo@0.0.2', null ]
+771 verbose cache add name=undefined spec="github-url-from-username-repo@0.0.2" args=["github-url-from-username-repo@0.0.2",null]
+772 verbose parsed url { protocol: null,
+772 verbose parsed url   slashes: null,
+772 verbose parsed url   auth: null,
+772 verbose parsed url   host: null,
+772 verbose parsed url   port: null,
+772 verbose parsed url   hostname: null,
+772 verbose parsed url   hash: null,
+772 verbose parsed url   search: null,
+772 verbose parsed url   query: null,
+772 verbose parsed url   pathname: 'github-url-from-username-repo@0.0.2',
+772 verbose parsed url   path: 'github-url-from-username-repo@0.0.2',
+772 verbose parsed url   href: 'github-url-from-username-repo@0.0.2' }
+773 verbose cache add name="github-url-from-username-repo" spec="0.0.2" args=["github-url-from-username-repo","0.0.2"]
+774 verbose parsed url { protocol: null,
+774 verbose parsed url   slashes: null,
+774 verbose parsed url   auth: null,
+774 verbose parsed url   host: null,
+774 verbose parsed url   port: null,
+774 verbose parsed url   hostname: null,
+774 verbose parsed url   hash: null,
+774 verbose parsed url   search: null,
+774 verbose parsed url   query: null,
+774 verbose parsed url   pathname: '0.0.2',
+774 verbose parsed url   path: '0.0.2',
+774 verbose parsed url   href: '0.0.2' }
+775 verbose addNamed [ 'github-url-from-username-repo', '0.0.2' ]
+776 verbose readDependencies using package.json deps
+777 verbose cache add [ 'string_decoder@0.10.25', null ]
+778 verbose cache add name=undefined spec="string_decoder@0.10.25" args=["string_decoder@0.10.25",null]
+779 verbose parsed url { protocol: null,
+779 verbose parsed url   slashes: null,
+779 verbose parsed url   auth: null,
+779 verbose parsed url   host: null,
+779 verbose parsed url   port: null,
+779 verbose parsed url   hostname: null,
+779 verbose parsed url   hash: null,
+779 verbose parsed url   search: null,
+779 verbose parsed url   query: null,
+779 verbose parsed url   pathname: 'string_decoder@0.10.25',
+779 verbose parsed url   path: 'string_decoder@0.10.25',
+779 verbose parsed url   href: 'string_decoder@0.10.25' }
+780 verbose cache add name="string_decoder" spec="0.10.25" args=["string_decoder","0.10.25"]
+781 verbose parsed url { protocol: null,
+781 verbose parsed url   slashes: null,
+781 verbose parsed url   auth: null,
+781 verbose parsed url   host: null,
+781 verbose parsed url   port: null,
+781 verbose parsed url   hostname: null,
+781 verbose parsed url   hash: null,
+781 verbose parsed url   search: null,
+781 verbose parsed url   query: null,
+781 verbose parsed url   pathname: '0.10.25',
+781 verbose parsed url   path: '0.10.25',
+781 verbose parsed url   href: '0.10.25' }
+782 verbose addNamed [ 'string_decoder', '0.10.25' ]
+783 verbose addNamed [ '0.10.25', '0.10.25' ]
+784 verbose readDependencies using package.json deps
+785 verbose cache add [ 'tunnel-agent@0.3.0', null ]
+786 verbose cache add name=undefined spec="tunnel-agent@0.3.0" args=["tunnel-agent@0.3.0",null]
+787 verbose parsed url { protocol: null,
+787 verbose parsed url   slashes: null,
+787 verbose parsed url   auth: null,
+787 verbose parsed url   host: null,
+787 verbose parsed url   port: null,
+787 verbose parsed url   hostname: null,
+787 verbose parsed url   hash: null,
+787 verbose parsed url   search: null,
+787 verbose parsed url   query: null,
+787 verbose parsed url   pathname: 'tunnel-agent@0.3.0',
+787 verbose parsed url   path: 'tunnel-agent@0.3.0',
+787 verbose parsed url   href: 'tunnel-agent@0.3.0' }
+788 verbose cache add name="tunnel-agent" spec="0.3.0" args=["tunnel-agent","0.3.0"]
+789 verbose parsed url { protocol: null,
+789 verbose parsed url   slashes: null,
+789 verbose parsed url   auth: null,
+789 verbose parsed url   host: null,
+789 verbose parsed url   port: null,
+789 verbose parsed url   hostname: null,
+789 verbose parsed url   hash: null,
+789 verbose parsed url   search: null,
+789 verbose parsed url   query: null,
+789 verbose parsed url   pathname: '0.3.0',
+789 verbose parsed url   path: '0.3.0',
+789 verbose parsed url   href: '0.3.0' }
+790 verbose addNamed [ 'tunnel-agent', '0.3.0' ]
+791 verbose addNamed [ '0.3.0', '0.3.0' ]
+792 verbose readDependencies using package.json deps
+793 verbose cache add [ 'oauth-sign@0.3.0', null ]
+794 verbose cache add name=undefined spec="oauth-sign@0.3.0" args=["oauth-sign@0.3.0",null]
+795 verbose parsed url { protocol: null,
+795 verbose parsed url   slashes: null,
+795 verbose parsed url   auth: null,
+795 verbose parsed url   host: null,
+795 verbose parsed url   port: null,
+795 verbose parsed url   hostname: null,
+795 verbose parsed url   hash: null,
+795 verbose parsed url   search: null,
+795 verbose parsed url   query: null,
+795 verbose parsed url   pathname: 'oauth-sign@0.3.0',
+795 verbose parsed url   path: 'oauth-sign@0.3.0',
+795 verbose parsed url   href: 'oauth-sign@0.3.0' }
+796 verbose cache add name="oauth-sign" spec="0.3.0" args=["oauth-sign","0.3.0"]
+797 verbose parsed url { protocol: null,
+797 verbose parsed url   slashes: null,
+797 verbose parsed url   auth: null,
+797 verbose parsed url   host: null,
+797 verbose parsed url   port: null,
+797 verbose parsed url   hostname: null,
+797 verbose parsed url   hash: null,
+797 verbose parsed url   search: null,
+797 verbose parsed url   query: null,
+797 verbose parsed url   pathname: '0.3.0',
+797 verbose parsed url   path: '0.3.0',
+797 verbose parsed url   href: '0.3.0' }
+798 verbose addNamed [ 'oauth-sign', '0.3.0' ]
+799 verbose addNamed [ '0.3.0', '0.3.0' ]
+800 verbose readDependencies using package.json deps
+801 verbose cache add [ 'hawk@1.0.0', null ]
+802 verbose cache add name=undefined spec="hawk@1.0.0" args=["hawk@1.0.0",null]
+803 verbose parsed url { protocol: null,
+803 verbose parsed url   slashes: null,
+803 verbose parsed url   auth: null,
+803 verbose parsed url   host: null,
+803 verbose parsed url   port: null,
+803 verbose parsed url   hostname: null,
+803 verbose parsed url   hash: null,
+803 verbose parsed url   search: null,
+803 verbose parsed url   query: null,
+803 verbose parsed url   pathname: 'hawk@1.0.0',
+803 verbose parsed url   path: 'hawk@1.0.0',
+803 verbose parsed url   href: 'hawk@1.0.0' }
+804 verbose cache add name="hawk" spec="1.0.0" args=["hawk","1.0.0"]
+805 verbose parsed url { protocol: null,
+805 verbose parsed url   slashes: null,
+805 verbose parsed url   auth: null,
+805 verbose parsed url   host: null,
+805 verbose parsed url   port: null,
+805 verbose parsed url   hostname: null,
+805 verbose parsed url   hash: null,
+805 verbose parsed url   search: null,
+805 verbose parsed url   query: null,
+805 verbose parsed url   pathname: '1.0.0',
+805 verbose parsed url   path: '1.0.0',
+805 verbose parsed url   href: '1.0.0' }
+806 verbose addNamed [ 'hawk', '1.0.0' ]
+807 verbose addNamed [ '1.0.0', '1.0.0' ]
+808 verbose readDependencies using package.json deps
+809 verbose cache add [ 'assert-plus@0.1.2', null ]
+810 verbose cache add name=undefined spec="assert-plus@0.1.2" args=["assert-plus@0.1.2",null]
+811 verbose parsed url { protocol: null,
+811 verbose parsed url   slashes: null,
+811 verbose parsed url   auth: null,
+811 verbose parsed url   host: null,
+811 verbose parsed url   port: null,
+811 verbose parsed url   hostname: null,
+811 verbose parsed url   hash: null,
+811 verbose parsed url   search: null,
+811 verbose parsed url   query: null,
+811 verbose parsed url   pathname: 'assert-plus@0.1.2',
+811 verbose parsed url   path: 'assert-plus@0.1.2',
+811 verbose parsed url   href: 'assert-plus@0.1.2' }
+812 verbose cache add name="assert-plus" spec="0.1.2" args=["assert-plus","0.1.2"]
+813 verbose parsed url { protocol: null,
+813 verbose parsed url   slashes: null,
+813 verbose parsed url   auth: null,
+813 verbose parsed url   host: null,
+813 verbose parsed url   port: null,
+813 verbose parsed url   hostname: null,
+813 verbose parsed url   hash: null,
+813 verbose parsed url   search: null,
+813 verbose parsed url   query: null,
+813 verbose parsed url   pathname: '0.1.2',
+813 verbose parsed url   path: '0.1.2',
+813 verbose parsed url   href: '0.1.2' }
+814 verbose addNamed [ 'assert-plus', '0.1.2' ]
+815 verbose addNamed [ '0.1.2', '0.1.2' ]
+816 verbose readDependencies using package.json deps
+817 verbose cache add [ 'asn1@0.1.11', null ]
+818 verbose cache add name=undefined spec="asn1@0.1.11" args=["asn1@0.1.11",null]
+819 verbose parsed url { protocol: null,
+819 verbose parsed url   slashes: null,
+819 verbose parsed url   auth: null,
+819 verbose parsed url   host: null,
+819 verbose parsed url   port: null,
+819 verbose parsed url   hostname: null,
+819 verbose parsed url   hash: null,
+819 verbose parsed url   search: null,
+819 verbose parsed url   query: null,
+819 verbose parsed url   pathname: 'asn1@0.1.11',
+819 verbose parsed url   path: 'asn1@0.1.11',
+819 verbose parsed url   href: 'asn1@0.1.11' }
+820 verbose cache add name="asn1" spec="0.1.11" args=["asn1","0.1.11"]
+821 verbose parsed url { protocol: null,
+821 verbose parsed url   slashes: null,
+821 verbose parsed url   auth: null,
+821 verbose parsed url   host: null,
+821 verbose parsed url   port: null,
+821 verbose parsed url   hostname: null,
+821 verbose parsed url   hash: null,
+821 verbose parsed url   search: null,
+821 verbose parsed url   query: null,
+821 verbose parsed url   pathname: '0.1.11',
+821 verbose parsed url   path: '0.1.11',
+821 verbose parsed url   href: '0.1.11' }
+822 verbose addNamed [ 'asn1', '0.1.11' ]
+823 verbose addNamed [ '0.1.11', '0.1.11' ]
+824 verbose readDependencies using package.json deps
+825 verbose cache add [ 'ctype@0.5.2', null ]
+826 verbose cache add name=undefined spec="ctype@0.5.2" args=["ctype@0.5.2",null]
+827 verbose parsed url { protocol: null,
+827 verbose parsed url   slashes: null,
+827 verbose parsed url   auth: null,
+827 verbose parsed url   host: null,
+827 verbose parsed url   port: null,
+827 verbose parsed url   hostname: null,
+827 verbose parsed url   hash: null,
+827 verbose parsed url   search: null,
+827 verbose parsed url   query: null,
+827 verbose parsed url   pathname: 'ctype@0.5.2',
+827 verbose parsed url   path: 'ctype@0.5.2',
+827 verbose parsed url   href: 'ctype@0.5.2' }
+828 verbose cache add name="ctype" spec="0.5.2" args=["ctype","0.5.2"]
+829 verbose parsed url { protocol: null,
+829 verbose parsed url   slashes: null,
+829 verbose parsed url   auth: null,
+829 verbose parsed url   host: null,
+829 verbose parsed url   port: null,
+829 verbose parsed url   hostname: null,
+829 verbose parsed url   hash: null,
+829 verbose parsed url   search: null,
+829 verbose parsed url   query: null,
+829 verbose parsed url   pathname: '0.5.2',
+829 verbose parsed url   path: '0.5.2',
+829 verbose parsed url   href: '0.5.2' }
+830 verbose addNamed [ 'ctype', '0.5.2' ]
+831 verbose addNamed [ '0.5.2', '0.5.2' ]
+832 verbose readDependencies using package.json deps
+833 verbose cache add [ 'async@0.2.10', null ]
+834 verbose cache add name=undefined spec="async@0.2.10" args=["async@0.2.10",null]
+835 verbose parsed url { protocol: null,
+835 verbose parsed url   slashes: null,
+835 verbose parsed url   auth: null,
+835 verbose parsed url   host: null,
+835 verbose parsed url   port: null,
+835 verbose parsed url   hostname: null,
+835 verbose parsed url   hash: null,
+835 verbose parsed url   search: null,
+835 verbose parsed url   query: null,
+835 verbose parsed url   pathname: 'async@0.2.10',
+835 verbose parsed url   path: 'async@0.2.10',
+835 verbose parsed url   href: 'async@0.2.10' }
+836 verbose cache add name="async" spec="0.2.10" args=["async","0.2.10"]
+837 verbose parsed url { protocol: null,
+837 verbose parsed url   slashes: null,
+837 verbose parsed url   auth: null,
+837 verbose parsed url   host: null,
+837 verbose parsed url   port: null,
+837 verbose parsed url   hostname: null,
+837 verbose parsed url   hash: null,
+837 verbose parsed url   search: null,
+837 verbose parsed url   query: null,
+837 verbose parsed url   pathname: '0.2.10',
+837 verbose parsed url   path: '0.2.10',
+837 verbose parsed url   href: '0.2.10' }
+838 verbose addNamed [ 'async', '0.2.10' ]
+839 verbose addNamed [ '0.2.10', '0.2.10' ]
+840 verbose readDependencies using package.json deps
+841 verbose cache add [ 'oauth-sign@0.3.0', null ]
+842 verbose cache add name=undefined spec="oauth-sign@0.3.0" args=["oauth-sign@0.3.0",null]
+843 verbose parsed url { protocol: null,
+843 verbose parsed url   slashes: null,
+843 verbose parsed url   auth: null,
+843 verbose parsed url   host: null,
+843 verbose parsed url   port: null,
+843 verbose parsed url   hostname: null,
+843 verbose parsed url   hash: null,
+843 verbose parsed url   search: null,
+843 verbose parsed url   query: null,
+843 verbose parsed url   pathname: 'oauth-sign@0.3.0',
+843 verbose parsed url   path: 'oauth-sign@0.3.0',
+843 verbose parsed url   href: 'oauth-sign@0.3.0' }
+844 verbose cache add name="oauth-sign" spec="0.3.0" args=["oauth-sign","0.3.0"]
+845 verbose parsed url { protocol: null,
+845 verbose parsed url   slashes: null,
+845 verbose parsed url   auth: null,
+845 verbose parsed url   host: null,
+845 verbose parsed url   port: null,
+845 verbose parsed url   hostname: null,
+845 verbose parsed url   hash: null,
+845 verbose parsed url   search: null,
+845 verbose parsed url   query: null,
+845 verbose parsed url   pathname: '0.3.0',
+845 verbose parsed url   path: '0.3.0',
+845 verbose parsed url   href: '0.3.0' }
+846 verbose addNamed [ 'oauth-sign', '0.3.0' ]
+847 verbose readDependencies using package.json deps
+848 verbose cache add [ 'hawk@1.0.0', null ]
+849 verbose cache add name=undefined spec="hawk@1.0.0" args=["hawk@1.0.0",null]
+850 verbose parsed url { protocol: null,
+850 verbose parsed url   slashes: null,
+850 verbose parsed url   auth: null,
+850 verbose parsed url   host: null,
+850 verbose parsed url   port: null,
+850 verbose parsed url   hostname: null,
+850 verbose parsed url   hash: null,
+850 verbose parsed url   search: null,
+850 verbose parsed url   query: null,
+850 verbose parsed url   pathname: 'hawk@1.0.0',
+850 verbose parsed url   path: 'hawk@1.0.0',
+850 verbose parsed url   href: 'hawk@1.0.0' }
+851 verbose cache add name="hawk" spec="1.0.0" args=["hawk","1.0.0"]
+852 verbose parsed url { protocol: null,
+852 verbose parsed url   slashes: null,
+852 verbose parsed url   auth: null,
+852 verbose parsed url   host: null,
+852 verbose parsed url   port: null,
+852 verbose parsed url   hostname: null,
+852 verbose parsed url   hash: null,
+852 verbose parsed url   search: null,
+852 verbose parsed url   query: null,
+852 verbose parsed url   pathname: '1.0.0',
+852 verbose parsed url   path: '1.0.0',
+852 verbose parsed url   href: '1.0.0' }
+853 verbose addNamed [ 'hawk', '1.0.0' ]
+854 verbose readDependencies using package.json deps
+855 verbose cache add [ 'tunnel-agent@0.3.0', null ]
+856 verbose cache add name=undefined spec="tunnel-agent@0.3.0" args=["tunnel-agent@0.3.0",null]
+857 verbose parsed url { protocol: null,
+857 verbose parsed url   slashes: null,
+857 verbose parsed url   auth: null,
+857 verbose parsed url   host: null,
+857 verbose parsed url   port: null,
+857 verbose parsed url   hostname: null,
+857 verbose parsed url   hash: null,
+857 verbose parsed url   search: null,
+857 verbose parsed url   query: null,
+857 verbose parsed url   pathname: 'tunnel-agent@0.3.0',
+857 verbose parsed url   path: 'tunnel-agent@0.3.0',
+857 verbose parsed url   href: 'tunnel-agent@0.3.0' }
+858 verbose cache add name="tunnel-agent" spec="0.3.0" args=["tunnel-agent","0.3.0"]
+859 verbose parsed url { protocol: null,
+859 verbose parsed url   slashes: null,
+859 verbose parsed url   auth: null,
+859 verbose parsed url   host: null,
+859 verbose parsed url   port: null,
+859 verbose parsed url   hostname: null,
+859 verbose parsed url   hash: null,
+859 verbose parsed url   search: null,
+859 verbose parsed url   query: null,
+859 verbose parsed url   pathname: '0.3.0',
+859 verbose parsed url   path: '0.3.0',
+859 verbose parsed url   href: '0.3.0' }
+860 verbose addNamed [ 'tunnel-agent', '0.3.0' ]
+861 verbose readDependencies using package.json deps
+862 verbose cache add [ 'assert-plus@0.1.2', null ]
+863 verbose cache add name=undefined spec="assert-plus@0.1.2" args=["assert-plus@0.1.2",null]
+864 verbose parsed url { protocol: null,
+864 verbose parsed url   slashes: null,
+864 verbose parsed url   auth: null,
+864 verbose parsed url   host: null,
+864 verbose parsed url   port: null,
+864 verbose parsed url   hostname: null,
+864 verbose parsed url   hash: null,
+864 verbose parsed url   search: null,
+864 verbose parsed url   query: null,
+864 verbose parsed url   pathname: 'assert-plus@0.1.2',
+864 verbose parsed url   path: 'assert-plus@0.1.2',
+864 verbose parsed url   href: 'assert-plus@0.1.2' }
+865 verbose cache add name="assert-plus" spec="0.1.2" args=["assert-plus","0.1.2"]
+866 verbose parsed url { protocol: null,
+866 verbose parsed url   slashes: null,
+866 verbose parsed url   auth: null,
+866 verbose parsed url   host: null,
+866 verbose parsed url   port: null,
+866 verbose parsed url   hostname: null,
+866 verbose parsed url   hash: null,
+866 verbose parsed url   search: null,
+866 verbose parsed url   query: null,
+866 verbose parsed url   pathname: '0.1.2',
+866 verbose parsed url   path: '0.1.2',
+866 verbose parsed url   href: '0.1.2' }
+867 verbose addNamed [ 'assert-plus', '0.1.2' ]
+868 verbose readDependencies using package.json deps
+869 verbose cache add [ 'ctype@0.5.2', null ]
+870 verbose cache add name=undefined spec="ctype@0.5.2" args=["ctype@0.5.2",null]
+871 verbose parsed url { protocol: null,
+871 verbose parsed url   slashes: null,
+871 verbose parsed url   auth: null,
+871 verbose parsed url   host: null,
+871 verbose parsed url   port: null,
+871 verbose parsed url   hostname: null,
+871 verbose parsed url   hash: null,
+871 verbose parsed url   search: null,
+871 verbose parsed url   query: null,
+871 verbose parsed url   pathname: 'ctype@0.5.2',
+871 verbose parsed url   path: 'ctype@0.5.2',
+871 verbose parsed url   href: 'ctype@0.5.2' }
+872 verbose cache add name="ctype" spec="0.5.2" args=["ctype","0.5.2"]
+873 verbose parsed url { protocol: null,
+873 verbose parsed url   slashes: null,
+873 verbose parsed url   auth: null,
+873 verbose parsed url   host: null,
+873 verbose parsed url   port: null,
+873 verbose parsed url   hostname: null,
+873 verbose parsed url   hash: null,
+873 verbose parsed url   search: null,
+873 verbose parsed url   query: null,
+873 verbose parsed url   pathname: '0.5.2',
+873 verbose parsed url   path: '0.5.2',
+873 verbose parsed url   href: '0.5.2' }
+874 verbose addNamed [ 'ctype', '0.5.2' ]
+875 verbose readDependencies using package.json deps
+876 verbose cache add [ 'asn1@0.1.11', null ]
+877 verbose cache add name=undefined spec="asn1@0.1.11" args=["asn1@0.1.11",null]
+878 verbose parsed url { protocol: null,
+878 verbose parsed url   slashes: null,
+878 verbose parsed url   auth: null,
+878 verbose parsed url   host: null,
+878 verbose parsed url   port: null,
+878 verbose parsed url   hostname: null,
+878 verbose parsed url   hash: null,
+878 verbose parsed url   search: null,
+878 verbose parsed url   query: null,
+878 verbose parsed url   pathname: 'asn1@0.1.11',
+878 verbose parsed url   path: 'asn1@0.1.11',
+878 verbose parsed url   href: 'asn1@0.1.11' }
+879 verbose cache add name="asn1" spec="0.1.11" args=["asn1","0.1.11"]
+880 verbose parsed url { protocol: null,
+880 verbose parsed url   slashes: null,
+880 verbose parsed url   auth: null,
+880 verbose parsed url   host: null,
+880 verbose parsed url   port: null,
+880 verbose parsed url   hostname: null,
+880 verbose parsed url   hash: null,
+880 verbose parsed url   search: null,
+880 verbose parsed url   query: null,
+880 verbose parsed url   pathname: '0.1.11',
+880 verbose parsed url   path: '0.1.11',
+880 verbose parsed url   href: '0.1.11' }
+881 verbose addNamed [ 'asn1', '0.1.11' ]
+882 verbose readDependencies using package.json deps
+883 verbose cache add [ 'async@0.2.10', null ]
+884 verbose cache add name=undefined spec="async@0.2.10" args=["async@0.2.10",null]
+885 verbose parsed url { protocol: null,
+885 verbose parsed url   slashes: null,
+885 verbose parsed url   auth: null,
+885 verbose parsed url   host: null,
+885 verbose parsed url   port: null,
+885 verbose parsed url   hostname: null,
+885 verbose parsed url   hash: null,
+885 verbose parsed url   search: null,
+885 verbose parsed url   query: null,
+885 verbose parsed url   pathname: 'async@0.2.10',
+885 verbose parsed url   path: 'async@0.2.10',
+885 verbose parsed url   href: 'async@0.2.10' }
+886 verbose cache add name="async" spec="0.2.10" args=["async","0.2.10"]
+887 verbose parsed url { protocol: null,
+887 verbose parsed url   slashes: null,
+887 verbose parsed url   auth: null,
+887 verbose parsed url   host: null,
+887 verbose parsed url   port: null,
+887 verbose parsed url   hostname: null,
+887 verbose parsed url   hash: null,
+887 verbose parsed url   search: null,
+887 verbose parsed url   query: null,
+887 verbose parsed url   pathname: '0.2.10',
+887 verbose parsed url   path: '0.2.10',
+887 verbose parsed url   href: '0.2.10' }
+888 verbose addNamed [ 'async', '0.2.10' ]
+889 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+890 verbose lock optimist@0.3.7 /Users/theturrible/.npm/090e1d8d-optimist-0-3-7.lock
+891 silly lockFile a40be02f-uglify-js-2-3-6 uglify-js@2.3.6
+892 verbose lock uglify-js@2.3.6 /Users/theturrible/.npm/a40be02f-uglify-js-2-3-6.lock
+893 silly lockFile 15405714-handlebars-1-3-0 handlebars@1.3.0
+894 verbose lock handlebars@1.3.0 /Users/theturrible/.npm/15405714-handlebars-1-3-0.lock
+895 silly lockFile cb57a3f3-walk-2-2-1 walk@2.2.1
+896 verbose lock walk@2.2.1 /Users/theturrible/.npm/cb57a3f3-walk-2-2-1.lock
+897 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+898 verbose lock nopt@1.0.10 /Users/theturrible/.npm/1be903a1-nopt-1-0-10.lock
+899 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+900 verbose lock resolve@0.3.1 /Users/theturrible/.npm/95464470-resolve-0-3-1.lock
+901 silly lockFile f690da8b-editor-0-0-5 editor@0.0.5
+902 verbose lock editor@0.0.5 /Users/theturrible/.npm/f690da8b-editor-0-0-5.lock
+903 silly lockFile d65a02d8-hub-url-from-username-repo-0-0-2 github-url-from-username-repo@0.0.2
+904 verbose lock github-url-from-username-repo@0.0.2 /Users/theturrible/.npm/d65a02d8-hub-url-from-username-repo-0-0-2.lock
+905 silly lockFile 7f3fd2df-init-package-json-0-0-15 init-package-json@0.0.15
+906 verbose lock init-package-json@0.0.15 /Users/theturrible/.npm/7f3fd2df-init-package-json-0-0-15.lock
+907 silly lockFile 7a1fbd48-request-2-30-0 request@2.30.0
+908 verbose lock request@2.30.0 /Users/theturrible/.npm/7a1fbd48-request-2-30-0.lock
+909 silly lockFile c88a72ee-string-decoder-0-10-25 string_decoder@0.10.25
+910 verbose lock string_decoder@0.10.25 /Users/theturrible/.npm/c88a72ee-string-decoder-0-10-25.lock
+911 silly lockFile d054959a-tunnel-agent-0-3-0 tunnel-agent@0.3.0
+912 verbose lock tunnel-agent@0.3.0 /Users/theturrible/.npm/d054959a-tunnel-agent-0-3-0.lock
+913 silly lockFile ae61e7c5-oauth-sign-0-3-0 oauth-sign@0.3.0
+914 verbose lock oauth-sign@0.3.0 /Users/theturrible/.npm/ae61e7c5-oauth-sign-0-3-0.lock
+915 silly lockFile 1ca87dbe-hawk-1-0-0 hawk@1.0.0
+916 verbose lock hawk@1.0.0 /Users/theturrible/.npm/1ca87dbe-hawk-1-0-0.lock
+917 silly lockFile 46222085-assert-plus-0-1-2 assert-plus@0.1.2
+918 verbose lock assert-plus@0.1.2 /Users/theturrible/.npm/46222085-assert-plus-0-1-2.lock
+919 silly lockFile 41ecb821-asn1-0-1-11 asn1@0.1.11
+920 verbose lock asn1@0.1.11 /Users/theturrible/.npm/41ecb821-asn1-0-1-11.lock
+921 silly lockFile c556016e-ctype-0-5-2 ctype@0.5.2
+922 verbose lock ctype@0.5.2 /Users/theturrible/.npm/c556016e-ctype-0-5-2.lock
+923 silly lockFile 098b530d-async-0-2-10 async@0.2.10
+924 verbose lock async@0.2.10 /Users/theturrible/.npm/098b530d-async-0-2-10.lock
+925 verbose cache add [ 'express@4.0.0', null ]
+926 verbose cache add name=undefined spec="express@4.0.0" args=["express@4.0.0",null]
+927 verbose parsed url { protocol: null,
+927 verbose parsed url   slashes: null,
+927 verbose parsed url   auth: null,
+927 verbose parsed url   host: null,
+927 verbose parsed url   port: null,
+927 verbose parsed url   hostname: null,
+927 verbose parsed url   hash: null,
+927 verbose parsed url   search: null,
+927 verbose parsed url   query: null,
+927 verbose parsed url   pathname: 'express@4.0.0',
+927 verbose parsed url   path: 'express@4.0.0',
+927 verbose parsed url   href: 'express@4.0.0' }
+928 verbose cache add name="express" spec="4.0.0" args=["express","4.0.0"]
+929 verbose parsed url { protocol: null,
+929 verbose parsed url   slashes: null,
+929 verbose parsed url   auth: null,
+929 verbose parsed url   host: null,
+929 verbose parsed url   port: null,
+929 verbose parsed url   hostname: null,
+929 verbose parsed url   hash: null,
+929 verbose parsed url   search: null,
+929 verbose parsed url   query: null,
+929 verbose parsed url   pathname: '4.0.0',
+929 verbose parsed url   path: '4.0.0',
+929 verbose parsed url   href: '4.0.0' }
+930 verbose addNamed [ 'express', '4.0.0' ]
+931 verbose addNamed [ '4.0.0', '4.0.0' ]
+932 silly lockFile 5b69df19-express-4-0-0 express@4.0.0
+933 verbose lock express@4.0.0 /Users/theturrible/.npm/5b69df19-express-4-0-0.lock
+934 verbose registry.get optimist not expired, no request
+935 verbose registry.get uglify-js not expired, no request
+936 verbose registry.get handlebars not expired, no request
+937 verbose registry.get walk not expired, no request
+938 verbose registry.get nopt not expired, no request
+939 verbose registry.get resolve not expired, no request
+940 verbose registry.get editor not expired, no request
+941 verbose registry.get github-url-from-username-repo not expired, no request
+942 verbose registry.get init-package-json not expired, no request
+943 verbose registry.get request not expired, no request
+944 verbose registry.get string_decoder not expired, no request
+945 verbose registry.get tunnel-agent not expired, no request
+946 verbose registry.get oauth-sign not expired, no request
+947 verbose registry.get hawk not expired, no request
+948 verbose registry.get assert-plus not expired, no request
+949 verbose registry.get asn1 not expired, no request
+950 verbose registry.get ctype not expired, no request
+951 verbose registry.get async not expired, no request
+952 silly lockFile 1c665c22-coder-string-decoder-0-10-25-tgz https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.25.tgz
+953 verbose lock https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.25.tgz /Users/theturrible/.npm/1c665c22-coder-string-decoder-0-10-25-tgz.lock
+954 verbose registry.get express not expired, no request
+955 verbose addRemoteTarball [ 'https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.25.tgz',
+955 verbose addRemoteTarball   '668c9da4f8efbdc937a4a6b6bf1cfbec4e9a82e2' ]
+956 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+957 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+958 silly lockFile a40be02f-uglify-js-2-3-6 uglify-js@2.3.6
+959 silly lockFile a40be02f-uglify-js-2-3-6 uglify-js@2.3.6
+960 silly lockFile 15405714-handlebars-1-3-0 handlebars@1.3.0
+961 silly lockFile 15405714-handlebars-1-3-0 handlebars@1.3.0
+962 silly lockFile cb57a3f3-walk-2-2-1 walk@2.2.1
+963 silly lockFile cb57a3f3-walk-2-2-1 walk@2.2.1
+964 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+965 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+966 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+967 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+968 silly lockFile f690da8b-editor-0-0-5 editor@0.0.5
+969 silly lockFile f690da8b-editor-0-0-5 editor@0.0.5
+970 silly lockFile d65a02d8-hub-url-from-username-repo-0-0-2 github-url-from-username-repo@0.0.2
+971 silly lockFile d65a02d8-hub-url-from-username-repo-0-0-2 github-url-from-username-repo@0.0.2
+972 silly lockFile 7f3fd2df-init-package-json-0-0-15 init-package-json@0.0.15
+973 silly lockFile 7f3fd2df-init-package-json-0-0-15 init-package-json@0.0.15
+974 silly lockFile 7a1fbd48-request-2-30-0 request@2.30.0
+975 silly lockFile 7a1fbd48-request-2-30-0 request@2.30.0
+976 silly lockFile d054959a-tunnel-agent-0-3-0 tunnel-agent@0.3.0
+977 silly lockFile d054959a-tunnel-agent-0-3-0 tunnel-agent@0.3.0
+978 silly lockFile ae61e7c5-oauth-sign-0-3-0 oauth-sign@0.3.0
+979 silly lockFile ae61e7c5-oauth-sign-0-3-0 oauth-sign@0.3.0
+980 silly lockFile 46222085-assert-plus-0-1-2 assert-plus@0.1.2
+981 silly lockFile 46222085-assert-plus-0-1-2 assert-plus@0.1.2
+982 silly lockFile 41ecb821-asn1-0-1-11 asn1@0.1.11
+983 silly lockFile 41ecb821-asn1-0-1-11 asn1@0.1.11
+984 info retry fetch attempt 1 at 22:56:16
+985 verbose fetch to= /var/folders/s1/1l5sg9bx38lbjyvhwx3z8ygc0000gn/T/npm-2125-GjZ-5DUC/1398048976658-0.35399194760248065/tmp.tgz
+986 silly lockFile 1ca87dbe-hawk-1-0-0 hawk@1.0.0
+987 silly lockFile 1ca87dbe-hawk-1-0-0 hawk@1.0.0
+988 silly lockFile c556016e-ctype-0-5-2 ctype@0.5.2
+989 silly lockFile c556016e-ctype-0-5-2 ctype@0.5.2
+990 silly lockFile 098b530d-async-0-2-10 async@0.2.10
+991 silly lockFile 098b530d-async-0-2-10 async@0.2.10
+992 silly lockFile 5b69df19-express-4-0-0 express@4.0.0
+993 silly lockFile 5b69df19-express-4-0-0 express@4.0.0
+994 http GET https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.25.tgz
+995 error TypeError: First argument needs to be a number, array or string.
+995 error     at new Buffer (buffer.js:188:15)
+995 error     at makeRequest (/usr/local/lib/node_modules/npm/lib/utils/fetch.js:70:19)
+995 error     at fetch_ (/usr/local/lib/node_modules/npm/lib/utils/fetch.js:37:13)
+995 error     at /usr/local/lib/node_modules/npm/lib/utils/fetch.js:24:5
+995 error     at /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:38:26
+995 error     at Object.oncomplete (fs.js:107:15)
+996 error If you need help, you may report this *entire* log,
+996 error including the npm and node versions, at:
+996 error     <http://github.com/npm/npm/issues>
+997 error System Darwin 13.1.0
+998 error command "node" "/usr/local/bin/npm" "update" "-a" "-g"
+999 error cwd /Users/theturrible/Dropbox/506/MusicStreamer
+1000 error node -v v0.10.26
+1001 error npm -v 1.4.7
+1002 verbose exit [ 1, true ]
