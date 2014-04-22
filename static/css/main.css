@@ -26,23 +26,13 @@ body{
   overflow-y: auto;
 }
 #acc_content{
-  background-color: #999898;
+  background-color: #fff;
   height: 100%;
   margin-top: 40px;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding: 20px;
-  box-shadow: 0px 0px 20px #ccc;
-}
-#acc_content_header{
-  background-color: #CCCCCC;
-  height: 10%;
-<<<<<<< HEAD
   margin-left: 30%;
   margin-right: 30%;
-}
-=======
-  width: 95%;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #ccc;
 }
 
 .fa.fa-user.fa-5x{
