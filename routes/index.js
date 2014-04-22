@@ -13,7 +13,6 @@ app = null;
 exports.createRoutes = function(app_ref){
   app = app_ref;
   app.get('/', musicRoute);
-  app.get('/mobile', mobileMusicRoute);
   app.get('/scan', scanRoute);
   app.get('/songs/:id', sendSong);
   app.get('/cover/:id', sendCover);
@@ -37,10 +36,6 @@ exports.createRoutes = function(app_ref){
 
 function musicRoute(req, res){
   res.render('index', {menu: true});
-}
-
-function mobileMusicRoute(req, res){
-  res.render('mobile', {menu: false});
 }
 
 function sendSong(req, res){
