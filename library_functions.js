@@ -13,19 +13,6 @@ var cnt = 0;
 var song_list = [];
 
 
-//USER REGISTRATION
-
-function registerNewUser(data){
-  //basic user shit
-  var user = {
-    email: '',
-    firstName: '', 
-    lastName: '',
-    password: '',
-    logins: ''
-  }
-
-}
 
 
 
@@ -158,6 +145,37 @@ function clearNotIn(list){
     console.log(numRemoved + " tracks deleted");
   });
 }
+
+//USER REGISTRATION
+
+exports.registerNewUser = function(app_ref, user_data){
+  app = app_ref;
+
+  //basic user shit
+  console.log("registering new user.");
+  console.log(user_data);
+  var user = {
+    email: user_data.email,
+    firstName: user_data.firstName, 
+    lastName: user_data.lastName,
+    password: user_data.password,
+    favePlaylist: '',
+    logins: 0
+  }
+  //need to implement check if user already exists... 
+
+  console.log("User Object: " ,user);
+  app.db.users.insert(user, function (err, newDoc){
+    // update the browser the song has been added
+    console.log("Added user: ", user.email);
+    var greet = "Welcome, " +  user.firstName;
+    
+    app.io.broadcast("reg_suc", greet);
+
+  });
+
+}
+
 
 exports.scanItems = function(app_ref, locations){
   app = app_ref;
