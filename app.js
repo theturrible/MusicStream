@@ -18,7 +18,7 @@ util.mkdir(__dirname + '/dbs', function(){
   util.mkdir(__dirname + '/dbs/covers', function(){});
 });
 
-
+console.log(__dirname);
 // all environments
 app.set('port', process.env.PORT || 9200);
 app.set('views', path.join(__dirname, 'views'));
