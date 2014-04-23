@@ -400,8 +400,19 @@ tr:hover .options{
     text-align: center;
     background: #fff;
     border: 1px solid #ccc;
+    display: block;
 }
+.success-container{
+    position: relative;
+    width: 300px;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    display: none;
 
+}
 #output{
     position: absolute;
     width: 300px;

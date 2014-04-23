@@ -9,15 +9,19 @@
             <div class="avatar"></div>
             <div class="form-box">
                 <form action="" method="">
-                    <input name="user" type="text" placeholder="First and Last Name">
-                    <input name="email" type="text" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    
-                    <a class="btn btn-info btn-block login" id='start_scan'>Register!</a>
+                    <input id = "firstName" name="user" type="text" placeholder="First Name">
+                    <input id = "lastName" name="user" type="text" placeholder="Last Name">
+                    <input id = "email" name="email" type="text" placeholder="Email">
+                    <input id = "password" type="password" placeholder="Password">
+
+                    <a class="btn btn-info btn-block login" id="register">Register!</a>
                 </form>
             </div>
         </div>
-        
+   <div class="success-container">
+          Click below to redirect to main website!
+          <a class="btn btn-info btn-block login" href="/" id="message"></a>
+   </div>     
 </div>
 {% endblock %}
 {% block scripts %}
@@ -27,7 +31,7 @@
     "/static/js/libs/backbone-min.js",
     "/static/js/libs/backbone.marionette.min.js",
     "/static/js/libs/socket.io.min.js",
-    "/static/js/login.js"
+    "/static/js/register.js"
     );
 </script>
 {% endblock %}

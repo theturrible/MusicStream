@@ -15,6 +15,9 @@
     "async": "*",
     "adm-zip": "*",
     "passport": "*",
-    "passport.socketio": "*"
+    "passport.socketio": "*",
+    "connect-mongo": "*",
+    "mongodb": "*"
+    
   }
 }
