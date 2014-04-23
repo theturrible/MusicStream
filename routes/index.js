@@ -25,7 +25,8 @@ exports.createRoutes = function(app_ref){
 
   app.io.route('scan_page_connected', function(req){ req.io.join('scanners'); });
   app.io.route('register_new', function(req){ lib_func.registerNewUser(app, req.data); });
-  //login
+  app.io.route('check_login', function(req){ lib_func.checkLogin(app, req.data); });
+  //log
   app.io.route('login_page_connected', function(req){ req.io.join('auth'); });
 
   app.io.route('player_page_connected', function(req){ req.io.join('players'); });

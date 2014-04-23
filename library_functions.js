@@ -168,20 +168,23 @@ exports.registerNewUser = function(app_ref, user_data){
   if (err) {
     console.log(err);
     if (err.code === 11000) {
-      console.log("error bitch");
-      //req.flash('errors', { msg: 'User with that email already exists.' });
+      var error = "Your account already exists."
+      console.log("notifying");
+      app.io.broadcast("reg_suc", error);
     }
     console.log("success");
   }
   });
-
   //need to implement check if user already exists... 
-
   console.log("User Object: " ,user);
-
-
+  app.io.broadcast("reg_suc", user.email);
 }
 
+
+exports.checkLogin = function(app_ref, req){
+if (req.user) return res.redirect('/');
+
+}
 
 exports.scanItems = function(app_ref, locations){
   app = app_ref;
