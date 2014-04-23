@@ -55,10 +55,10 @@ function account(req, res){
 }
 
 function register(req, res){
-  res.render('register', {menu: true});
+  res.render('register', {menu: false});
 }
 function login(req, res){
-  res.render('login', {menu: true});
+  res.render('login', {menu: false});
 }
 
 function musicRoute(req, res){
