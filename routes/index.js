@@ -15,6 +15,7 @@ exports.createRoutes = function(app_ref){
   app.get('/', musicRoute);
   app.get('/scan', scanRoute);
   app.get('/account', account);
+  app.get('/register', register);
   app.get('/login', login);
   app.get('/songs/:id', sendSong);
   app.get('/cover/:id', sendCover);
@@ -54,10 +55,10 @@ function account(req, res){
 }
 
 function register(req, res){
-  res.render('register', {menu: false});
+  res.render('register', {menu: true});
 }
 function login(req, res){
-  res.render('login', {menu: false});
+  res.render('login', {menu: true});
 }
 
 function musicRoute(req, res){

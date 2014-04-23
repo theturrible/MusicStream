@@ -9,11 +9,10 @@
             <div class="avatar"></div>
             <div class="form-box">
                 <form action="" method="">
-                    <input name="email" type="text" placeholder="email">
-                    <input type="password" placeholder="password">
-
-                    <a class="btn btn-info btn-block login" id='login'>Login!</a>
-                    <a class="btn btn-info btn-block login" href="/register">Not a memeber?</a>
+                    <input name="user" type="text" placeholder="First and Last Name">
+                    <input name="email" type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a class="btn btn-info btn-block login" id='start_scan'>Login</a>
                 </form>
             </div>
         </div>
