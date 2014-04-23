@@ -17,7 +17,8 @@
     "passport": "*",
     "passport.socketio": "*",
     "connect-mongo": "*",
-    "mongodb": "*"
-    
+    "mongodb": "*",
+    "express-session": "*",
+    "mongoose": "*"
   }
 }

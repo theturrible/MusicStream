@@ -5,12 +5,11 @@
 
 var express = require('express.io');
 var http = require('http');
+var session = require('express-session');
 var path = require('path');
 var util = require(__dirname + '/util.js');
-
-//user DB
-var sessionStore     = require('connect-mongo'), // find a working session store (have a look at the readme)
-    passportSocketIo = require("passport.socketio");
+var MongoStore = require('connect-mongo')({ session: session });
+var mongoose = require('mongoose');
 
 var app = express();
 app.http().io();
@@ -20,6 +19,11 @@ util.mkdir(__dirname + '/dbs', function(){
   require(__dirname + '/db.js')(app);
   // make sure the cover directory is present
   util.mkdir(__dirname + '/dbs/covers', function(){});
+});
+
+mongoose.connect("127.0.0.1:27017");
+mongoose.connection.on('error', function() {
+  console.error('✗ MongoDB Connection Error. Please make sure MongoDB is running.');
 });
 
 

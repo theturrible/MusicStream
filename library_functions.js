@@ -5,6 +5,7 @@ var md5 = require('MD5');
 
 var util = require(__dirname + '/util.js');
 var config = require(__dirname + '/config').config();
+var User = require('./models/User');
 
 var running = false;
 var hard_rescan = false;
@@ -154,25 +155,30 @@ exports.registerNewUser = function(app_ref, user_data){
   //basic user shit
   console.log("registering new user.");
   console.log(user_data);
-  var user = {
+  var user = new User({
     email: user_data.email,
-    firstName: user_data.firstName, 
-    lastName: user_data.lastName,
-    password: user_data.password,
-    favePlaylist: '',
+    firstName: user_data.firstName,
+    lastName: user_data.lastName, 
+    password: user_data.password, 
+    favePlaylist: '', 
     logins: 0
+  });
+
+  user.save(function(err) {
+  if (err) {
+    console.log(err);
+    if (err.code === 11000) {
+      console.log("error bitch");
+      //req.flash('errors', { msg: 'User with that email already exists.' });
+    }
+    console.log("success");
   }
+  });
+
   //need to implement check if user already exists... 
 
   console.log("User Object: " ,user);
-  app.db.users.insert(user, function (err, newDoc){
-    // update the browser the song has been added
-    console.log("Added user: ", user.email);
-    var greet = "Welcome, " +  user.firstName;
-    
-    app.io.broadcast("reg_suc", greet);
 
-  });
 
 }
 
