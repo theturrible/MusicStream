@@ -15,7 +15,6 @@ exports.createRoutes = function(app_ref){
   app.get('/', musicRoute);
   app.get('/scan', scanRoute);
   app.get('/account', account);
-  app.get('/register', register);
   app.get('/login', login);
   app.get('/songs/:id', sendSong);
   app.get('/cover/:id', sendCover);
@@ -24,6 +23,10 @@ exports.createRoutes = function(app_ref){
   app.io.route('registerUser', registerNew);
 
   app.io.route('scan_page_connected', function(req){ req.io.join('scanners'); });
+
+  //login
+  app.io.route('login_page_connected', function(req){ req.io.join('auth'); });
+
   app.io.route('player_page_connected', function(req){ req.io.join('players'); });
   app.io.route('set_comp_name', setCompName);
   app.io.route('start_scan', function(req){ lib_func.scanLibrary(app, false); });

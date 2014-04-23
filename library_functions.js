@@ -186,6 +186,8 @@ exports.stopScan = function(app){
   running = false;
 }
 
+
+
 function broadcast(id, message){
   app.io.room('scanners').broadcast(id, message);
 }
