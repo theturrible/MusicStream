@@ -2,7 +2,7 @@
 exports.config = function(){
   data = {
     // edit below here
-    music_dir: "/Users/theturrible/Dropbox/School/506/mp3"
+    music_dir: "/Users/johnathanlee/MusicStream/mp3"
     // and above here
   }
   if(data.music_dir.lastIndexOf("/") == data.music_dir.length-1){

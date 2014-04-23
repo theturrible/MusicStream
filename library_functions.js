@@ -78,6 +78,7 @@ function findSong(item, callback){
             if(!exists){
               fs.writeFile(filename, pic['data'], function(err){
                 if(err) console.log(err);
+                console.log("Wrote file!");
                 console.log("Added pic to song", song.title);
               });
             }

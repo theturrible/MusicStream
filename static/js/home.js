@@ -638,7 +638,25 @@ SidebarView = Backbone.View.extend({
   },
   events: {
     "click .add_playlist": "addPlaylist",
+    "click .start_up": "startUp",
     "keyup .search-input": "searchItems"
+  },
+  startUp: function(ev){
+    bootbox.dialog({
+      message: "Would you like to listnen to your favorite playlist?",
+      title: "Welcome Back XXX, this is your xxx time you've logged in.",
+      buttons: {
+        cancel: {
+          label: "Cancel",
+          className: "btn-default"
+        },
+        yes: {
+          label: "Yes",
+          className: "btn-success",
+
+        }
+      }
+    });
   },
   addPlaylist: function(){
     bootbox.prompt("Playlist title?", function(result){

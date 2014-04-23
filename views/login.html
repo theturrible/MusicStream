@@ -28,29 +28,29 @@
             <div class="column">
               <div>
                 <label>First Name:</label>
-                <input type="text" />
+                <input type="text" name="first_name" />
                 <span class="error">This is an error</span>
               </div>
               <div>
                 <label>Last Name:</label>
-                <input type="text" />
+                <input type="text" name="last_name"/>
                 <span class="error">This is an error</span>
               </div>
             </div>
             <div class="column">
               <div>
                 <label>Username(email):</label>
-                <input type="text"/>
+                <input type="text"/ name="user_name">
                 <span class="error">This is an erboror</span>
               </div>
               <div>
                 <label>Password:</label>
-                <input type="password" />
+                <input type="password" name="password"/>
                 <span class="error">This is an error</span>
               </div>
             </div>
             <div class="bottom">
-              <input type="submit" value="Register" />
+              <input type="submit" id="register_user" value="Register"/>
               <a href="index.html" rel="login" class="linkform">Back to Login</a>
               <div class="clear"></div>
             </div>
@@ -154,5 +154,15 @@
                });  
       });
         </script>
+
+        <script type="text/javascript">
+          head.js(
+              "/static/js/libs/underscore-min.js",
+              "/static/js/libs/backbone-min.js",
+              "/static/js/libs/backbone.marionette.min.js",
+              "/static/js/libs/socket.io.min.js",
+              "/static/js/register.js"
+            );
+      </script>
     </body>
 </html>
