@@ -1,4 +1,5 @@
 other
 node_modules
 config.js
-dbs
+dbs/*
+
