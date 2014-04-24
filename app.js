@@ -11,8 +11,6 @@ var util = require(__dirname + '/util.js');
 var MongoStore = require('connect-mongo')({ session: session });
 var mongoose = require('mongoose');
 var passport = require('passport');
-
-
 var app = express();
 app.http().io();
 // make sure the dbs directory is present

@@ -182,7 +182,19 @@ exports.registerNewUser = function(app_ref, user_data){
 
 
 exports.checkLogin = function(app_ref, req){
-if (req.user) return res.redirect('/');
+ passport.authenticate('local', function(err, req.user, info) {
+    if (err) return next(err);
+    if (!user) {
+      req.flash('errors', { msg: info.message });
+      return res.redirect('/login');
+    }
+    req.logIn(user, function(err) {
+      if (err) return next(err);
+      req.flash('success', { msg: 'Success! You are logged in.' });
+      res.redirect(req.session.returnTo || '/');
+    });
+  })(req, res, next);
+};
 
 }
 
