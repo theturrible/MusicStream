@@ -181,11 +181,15 @@ function deletePlaylist(req){
   });
 }
 
+<<<<<<< HEAD
 function favoritePlaylist(req){
   //play list id. 
   fav = req.data.fav;
   lib_func.addToFav(app, fav);
 }
+=======
+
+>>>>>>> a6bad5c04e3a7ab661ef099af5bcf29ee4d72ce9
 
 function addToPlaylist(req){
   addItems = req.data.add;
