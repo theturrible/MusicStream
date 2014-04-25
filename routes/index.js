@@ -99,7 +99,7 @@ function forceLogin(req, res, mes){
 function musicRoute(req, res){
   if(app.locals.settings.userInfo){
     var user = app.locals.settings.userInfo;
-    res.render('index', {menu: true, dropdown: true, firstName: user.firstName});
+    res.render('index', {menu: true, dropdown: true, firstName: user.firstName, plist: user.favePlaylist});
   }else{
     login(req, res);
   }

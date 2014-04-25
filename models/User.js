@@ -9,8 +9,6 @@ var userSchema = new mongoose.Schema({
   lastName: String, 
   favePlaylist: String, 
   logins: Number
-
-
 });
 
 /**

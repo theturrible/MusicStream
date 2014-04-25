@@ -13,11 +13,19 @@ var express = require('express.io'),
     passportSocketIo = require("passport.socketio"),
     xtend = require('xtend'),
     app = express();
+    fs = require('fs');
+    var https = require('https');
+
+var options = {
+  key: fs.readFileSync('./certs/key.pem'),
+  cert: fs.readFileSync('./certs/cert.pem')
+};
+var httpServer = http.createServer(app);
+var httpsServer = https.createServer(options, app);
 
 
+app.https(options).io();
 
-
-app.http().io();
 
 // make sure the dbs directory is present(this is used for playlist and music lib storage.)
 util.mkdir(__dirname + '/dbs', function(){
@@ -77,12 +85,16 @@ if ('development' == app.get('env')) {
 }
 
 
-
-
-
 //create routes.
 require(__dirname + '/routes').createRoutes(app);
 //and finally, start the server. 
-app.listen(app.get('port'), function(){
+/*app.listen(9300, function(){
+  console.log('Express server listening on port ' + app.get('port'));
+});*/
+//create https.
+https.createServer(options,app).listen(9200, function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+app.listen(9200, "127.0.0.1")
+

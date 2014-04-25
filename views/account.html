@@ -1,6 +1,6 @@
 {% extends 'base/main_base.html' %}
 
-{% block title %}Player{% endblock %}
+{% block title %}Account Page{% endblock %}
 
 {% block content %}
 <div id="wrapper" class="custom_scrollbar" tabindex="0">
@@ -12,7 +12,7 @@
       <i class="fa fa-user fa-5x"></i>
       </td>
       <td class="contents">
-       <h3>Welcome, {{firstName}} {{lastName}}! </h3> 
+       <h3>Welcome to 506 Music Streaming Service, {{firstName}} {{lastName}}! </h3> 
       </td>
     </tr>
     <tr>
@@ -44,7 +44,7 @@
         <i class="fa fa-music fa-2x"></i>
       </td>
       <td class="contents">
-        Favorite Playlist: {{plist}}
+        Do you want to play your favorite playlist? <a href="https://localhost:9200/#playlist/{{plist}}">YES!</a> || <a href="https://localhost:9200/#playlist/LIBRARY">No.</a>
       </td>
     </tr>
 

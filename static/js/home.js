@@ -1,5 +1,5 @@
 // define things before they are used
-var socket = io.connect('http://'+window.location.host);
+var socket = io.connect('https://'+window.location.host);
 
 var PlaylistCollection = Backbone.Collection.extend({
   comparator: function(playlist){
