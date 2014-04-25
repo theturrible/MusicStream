@@ -223,6 +223,23 @@ exports.checkLogin = function(app_ref, user_data){
   });
 }
 
+exports.addToFav= function(app_ref, ID){
+  
+  var edit = { favePlaylist: ID },
+      options =  { multi: false }, 
+      condition = { email: app.locals.settings.userInfo.email};
+  //attack to req.
+  //Model.update(conditions, update, options, callback);
+  //incrementing count
+  console.log("adding favorite playlist");
+  User.update(condition, edit, options, function callback (err, numAffected) {
+    if(err){console.log("Oops, error!");};
+    if(numAffected){console.log(numAffected);};
+  });
+  User.findOne({ email: app.locals.settings.userInfo.email }, function(err, user){ app.locals.settings.userInfo = user});
+  app.io.broadcast("favorite_added");
+}
+
 
 exports.scanItems = function(app_ref, locations){
   app = app_ref;

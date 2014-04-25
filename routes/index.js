@@ -20,8 +20,11 @@ exports.createRoutes = function(app_ref){
   app.get('/logout', logout);
   app.get('/songs/:id', sendSong);
   app.get('/cover/:id', sendCover);
-  app.get('/downloadplaylist/:id', downloadPlaylist);
+  //app.get('/favorite', logout);
+
+  //app.get('/downloadplaylist/:id', downloadPlaylist);
   //login and register controls
+
 
   app.io.route('scan_page_connected', function(req){ req.io.join('scanners'); });
   app.io.route('register_new', function(req){ lib_func.registerNewUser(app, req.data); });
@@ -38,7 +41,10 @@ exports.createRoutes = function(app_ref){
   app.io.route('fetch_songs', returnSongs);
   app.io.route('fetch_playlists', returnPlaylists);
   app.io.route('create_playlist', createPlaylist);
+
   app.io.route('delete_playlist', deletePlaylist);
+  app.io.route('favorite', favoritePlaylist);
+
   app.io.route('add_to_playlist', addToPlaylist);
   app.io.route('remove_from_playlist', removeFromPlaylist);
   app.io.route('hard_rescan', rescanItem);
@@ -75,7 +81,7 @@ function login(req, res){
       console.log("GET THE FUCK OUT OF THE LOGIN PAGE.");
       res.render('index', {menu: true});
   }else{
-    res.render('login', {menu: false});
+    res.render('login', {menu: false}); 
   }
 }
 
@@ -122,30 +128,6 @@ function sendCover(req, res){
     } else {
       res.sendfile(song.cover_location);
     }
-  });
-}
-
-function downloadPlaylist(req, res){
-  app.db.playlists.findOne({_id: req.params.id}, function(err, playlist){
-    if(err) throw err;
-    // create zip
-    var filename = os.tmpdir() + '/download.zip';
-    var zip = new AdmZip();
-    async.forEach(playlist.songs, function(item, callback){
-      app.db.songs.findOne({_id: item._id}, function(err, song){
-        if(err) throw err;
-        //song.location.replace(config.music_dir, '')
-        zip.addLocalFile(song.location, "/");
-        callback();
-      });
-    }, function(err){
-      // convert the zip to a buffer
-      zip.toBuffer(function(buffer){
-        // download the buffer
-        res.setHeader('Content-disposition', 'attachment; filename=download.zip');
-        res.end(buffer, 'binary');
-      });
-    });
   });
 }
 
@@ -197,6 +179,12 @@ function deletePlaylist(req){
   app.db.playlists.remove({_id: del}, {}, function(err, numRemoved){
     req.io.route('fetch_playlists');
   });
+}
+
+function favoritePlaylist(req){
+  //play list id. 
+  fav = req.data.fav;
+  lib_func.addToFav(app, fav);
 }
 
 function addToPlaylist(req){

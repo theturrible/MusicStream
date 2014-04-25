@@ -399,7 +399,8 @@ SongView = Backbone.View.extend({
     "click tbody > tr": "triggerSong",
     "click .options": "triggerOptions",
     "contextmenu td": "triggerOptions",
-    "click .delete_playlist": "deletePlaylist"
+    "click .delete_playlist": "deletePlaylist", 
+    "click .favorite": "favoritePlaylist"
   },
   triggerSong: function(ev){
     if($(ev.target).hasClass("options")){
@@ -453,6 +454,10 @@ SongView = Backbone.View.extend({
         }
       }
     });
+  },
+  favoritePlaylist: function(ev){
+    console.log("emit favorite..");
+    socket.emit('favorite', {fav: player.playlist._id});
   },
   renderSong: function(){
     var batch = 50;
