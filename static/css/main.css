@@ -5,6 +5,7 @@ body{
   background-color: #585858;
 }
 
+
 #center_title{
   
   margin-right: 40%;
@@ -34,7 +35,7 @@ body{
 }
 #acc_content{
   background-color: #fff;
-  height: 100%;
+  height: 400px;
   margin-top: 40px;
   margin-left: 30%;
   margin-right: 30%;
@@ -49,6 +50,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 90%
+
 }
 .account_table .pic_head{
   width: 10%;
@@ -59,8 +61,8 @@ body{
   height: 31px;
   text-align: center;
 }
-.account_table .content{
-  width: 90%;
+.account_table .contents{
+    text-align: left;
 }
 
 #login_div{
@@ -151,6 +153,8 @@ body{
   bottom: 48px;
   display: none;
 }
+
+
 #bottom_bar:hover .duration{
   display: block;
   background-color: #ff9900;
@@ -459,6 +463,15 @@ tr:hover .options{
     border-radius: 100%;
     border: 2px solid #aaa;
     background-size: cover;
+}
+
+.errormessage{
+  color: red;
+  display: none;
+}
+.message{
+  color: blue;
+  display: inline;
 }
 
 .form-box input{

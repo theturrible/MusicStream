@@ -8,9 +8,13 @@
             <div id="output"></div>
             <div class="avatar"></div>
             <div class="form-box">
+                {% if message %}
+                    <p class="message" id="message">{{message}}</p>
+                {% endif %}
+                <p class="errormessage" id="error"> Welcome</p>
                 <form action="" method="">
-                    <input name="email" type="text" placeholder="email">
-                    <input type="password" placeholder="password">
+                    <input id = "email" name="email" type="text" placeholder="Email">
+                    <input id = "password" type="password" placeholder="Password">
 
                     <a class="btn btn-info btn-block login" id='login'>Login!</a>
                     <a class="btn btn-info btn-block login" href="/register">Not a memeber?</a>

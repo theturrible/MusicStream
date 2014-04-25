@@ -6,6 +6,7 @@ var md5 = require('MD5');
 var util = require(__dirname + '/util.js');
 var config = require(__dirname + '/config').config();
 var User = require('./models/User');
+var xtend = require('xtend');
 
 var running = false;
 var hard_rescan = false;
@@ -164,39 +165,63 @@ exports.registerNewUser = function(app_ref, user_data){
     logins: 0
   });
 
-  user.save(function(err) {
+  user.save(function(err, new_user) {
   if (err) {
     console.log(err);
     if (err.code === 11000) {
       var error = "Your account already exists."
       console.log("notifying");
-      app.io.broadcast("reg_suc", error);
+      app.io.broadcast("registration_fail", error);
     }
-    console.log("success");
+  }else{
+     console.log("User Object: ", new_user);
+     app.locals.settings.userInfo = new_user;
+     app.io.broadcast("registration_success", new_user.email);
   }
   });
-  //need to implement check if user already exists... 
-  console.log("User Object: " ,user);
-  app.io.broadcast("reg_suc", user.email);
 }
 
+//checks if the login is correct.
+require = "./config/passport.js";
+exports.checkLogin = function(app_ref, user_data){
+  app = app_ref;
+  console.log(app.userInfo);
+  //console.log(app);
+    
+   User.findOne({ email: user_data.email }, function(err, user){
+     if(!user){
+      var error = "You are not a member, click the button below!"
+      console.log("user not found.");
+      app.io.broadcast("authentication_failed", error);
+    }else{
+        user.comparePassword(user_data.password, function(err, isMatch) {
+            if(isMatch) { 
+              var numOfLogins = user.logins + 1;
+              var edit = { logins: numOfLogins },
+                  options =  { multi: false }, 
+                  condition = { email: user.email};
+              //attack to req.
+              //Model.update(conditions, update, options, callback);
+              //incrementing count
+              console.log("Incrementing count;");
+              User.update(condition, edit, options, function callback (err, numAffected) {
+                if(err){console.log("Oops, error!");};
+                if(numAffected){console.log(numAffected);};
 
-exports.checkLogin = function(app_ref, req){
- passport.authenticate('local', function(err, req.user, info) {
-    if (err) return next(err);
-    if (!user) {
-      req.flash('errors', { msg: info.message });
-      return res.redirect('/login');
+              });
+              app.locals.settings.userInfo = user;
+              console.log("User ", user.firstName, " has succesfully logged in.");
+              //incremented logins..
+              user.logins++;
+            }else {
+              console.log("User is bad.");
+            }
+      console.log("user found")
+      });
     }
-    req.logIn(user, function(err) {
-      if (err) return next(err);
-      req.flash('success', { msg: 'Success! You are logged in.' });
-      res.redirect(req.session.returnTo || '/');
-    });
-  })(req, res, next);
-};
-
+  });
 }
+
 
 exports.scanItems = function(app_ref, locations){
   app = app_ref;

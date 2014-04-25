@@ -1,15 +1,17 @@
 // soccet connection and events
 var socket = io.connect('http://'+window.location.hostname+':9200');
-socket.on('login_page_connected', function(){
-  socket.emit('login_page_connected');
-  console.log("Login Page connected");
+socket.on('register_page_connected', function(){
+  socket.emit('register_page_connected');
+  console.log("Register Page connected");
 });
-socket.on('reg_suc', function(data){
-  console.log('reg_suc', data);	
-
-  $(".login-container").css('display','none');
-  $(".success-container").css('display','block');
-  $("#message").text(data);
+socket.on('registration_success', function(data){
+  console.log('registration_success', data);	
+  location.href = '/account';
+});
+socket.on('registration_fail', function(data){
+   console.log('registration_failed', data); 
+   $(".errormessage").css('display','inline');
+   $('#error').text(data);
 });
 
 $("#register").click(function(){

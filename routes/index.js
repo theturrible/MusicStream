@@ -17,18 +17,19 @@ exports.createRoutes = function(app_ref){
   app.get('/account', account);
   app.get('/register', register);
   app.get('/login', login);
+  app.get('/logout', logout);
   app.get('/songs/:id', sendSong);
   app.get('/cover/:id', sendCover);
   app.get('/downloadplaylist/:id', downloadPlaylist);
   //login and register controls
-  app.io.route('registerUser', registerNew);
 
   app.io.route('scan_page_connected', function(req){ req.io.join('scanners'); });
   app.io.route('register_new', function(req){ lib_func.registerNewUser(app, req.data); });
   app.io.route('check_login', function(req){ lib_func.checkLogin(app, req.data); });
+  app.io.route('logged_in', musicRouteLoggedIn);
   //log
   app.io.route('login_page_connected', function(req){ req.io.join('auth'); });
-
+  app.io.route('register_page_connected', function(req){ req.io.join('auth'); });
   app.io.route('player_page_connected', function(req){ req.io.join('players'); });
   app.io.route('set_comp_name', setCompName);
   app.io.route('start_scan', function(req){ lib_func.scanLibrary(app, false); });
@@ -45,26 +46,64 @@ exports.createRoutes = function(app_ref){
   app.io.route('get_receivers', getReceivers);
 };
 
-function registerNew(){
-
-
-}
-
-
 function account(req, res){
-  res.render('account', {menu: true, userName: "Ivan Grinkevich", email: "grin.van@gmail.com", logins: "over 9000"});
+  var user = app.locals.settings.userInfo;
+  if(user){
+    var data = app.locals.settings.userInfo;
+    console.log("User found.");
+    res.render('account', {
+                menu: true,
+                dropdown: true, 
+                firstName: data.firstName,
+                lastName: data.lastName,
+                email: data.email,
+                logins: data.logins,
+                plist: data.favePlaylist || "No favorite"
+
+              });
+  }else{
+    forceLogin(req, res, "You need to logged in to view this page.");
+  }    
+  
 }
 
 function register(req, res){
   res.render('register', {menu: false});
 }
 function login(req, res){
-  res.render('login', {menu: false});
+  if(app.locals.settings.userInfo){
+      console.log("GET THE FUCK OUT OF THE LOGIN PAGE.");
+      res.render('index', {menu: true});
+  }else{
+    res.render('login', {menu: false});
+  }
+}
+
+function logout(req, res){
+  var data = app.locals.settings.userInfo;
+  app.locals.settings.userInfo = "";
+  forceLogin(req, res, "I am very sad to see you go, " + data.firstName);
+}
+  
+
+function forceLogin(req, res, mes){
+  res.render('login', {menu: false, message: mes});
 }
 
 function musicRoute(req, res){
-  res.render('index', {menu: true});
+  if(app.locals.settings.userInfo){
+    var user = app.locals.settings.userInfo;
+    res.render('index', {menu: true, dropdown: true, firstName: user.firstName});
+  }else{
+    login(req, res);
+  }
+  
 }
+
+function musicRouteLoggedIn(req, res){
+  console.log(app.locals.settings.userInfo);
+  }
+
 
 function sendSong(req, res){
   app.db.songs.findOne({_id: req.params.id}, function(err, song){

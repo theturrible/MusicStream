@@ -19,6 +19,8 @@
     "connect-mongo": "*",
     "mongodb": "*",
     "express-session": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "passport-local": "*", 
+    "xtend": "*"
   }
 }
