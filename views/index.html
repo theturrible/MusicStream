@@ -33,7 +33,7 @@
   <div id="sidebar_height_wrapper">
     <h3>{{title}}</h3>
     <ul class="nav disable_selection custom_scrollbar">
-      {% if fixed %}<li class='dropdown-header'>Auto-Playlists</li>{% endif %}
+     
       {% for playlist in fixed %}
         <li><a href="#playlist/{{playlist.attributes._id}}">{{playlist.attributes.title}}</a></li>
       {% endfor %}
