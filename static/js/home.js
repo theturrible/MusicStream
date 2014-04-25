@@ -77,8 +77,6 @@ function PlayState(){
   this.current_track = document.getElementById("current_track");
   this.fade_track = document.getElementById("fade_track");
   this.scrub = null;
-  // remote control data
-  this.comp_name = null;
   this.init = function(){
     setInterval(function(){ player.update() }, 50);
     $(this.names.playpause).click(function(){ player.togglePlayState() });
@@ -401,7 +399,6 @@ SongView = Backbone.View.extend({
     "click tbody > tr": "triggerSong",
     "click .options": "triggerOptions",
     "contextmenu td": "triggerOptions",
-    "click .cover": "triggerCover",
     "click .delete_playlist": "deletePlaylist"
   },
   triggerSong: function(ev){
@@ -435,10 +432,6 @@ SongView = Backbone.View.extend({
     } else {
       hideOptions();
     }
-    return false;
-  },
-  triggerCover: function(ev){
-    showCover($(ev.target).attr('src'));
     return false;
   },
   deletePlaylist: function(ev){
@@ -484,11 +477,6 @@ SongView = Backbone.View.extend({
     }
   }
 });
-
-function showCover(src){
-  box = new CoverBox(src);
-  box.activate();
-}
 
 var optionsVisible = false;
 var selectedItems = [];
@@ -621,29 +609,6 @@ SettingsBarView = Backbone.View.extend({
       player.setVolElem($("#vol_bar"));
     });
   },
-  events: {
-    "click #remote_setup": "openOptions"
-  },
-  openOptions: function(){
-    bootbox.dialog({
-      message: render("#control_template", { comp_name: player.comp_name, host: window.location.host }),
-      title: "Setup Remote Control",
-      buttons: {
-        danger: {
-          label: "Cancel",
-          className: "btn-danger"
-        },
-        success: {
-          label: "Save",
-          className: "btn-success",
-          callback: function() {
-            comp_name = $("#comp_name_input").val();
-            player.setCompName(comp_name);
-          }
-        }
-      }
-    });
-  }
 })
 
 InfoView = Backbone.View.extend({
@@ -652,12 +617,7 @@ InfoView = Backbone.View.extend({
     this.$el.html(render(this.template, player.current_song));
   },
   events: {
-    "click .info_cover": "triggerCover",
     "click .info_options": "triggerOptions"
-  },
-  triggerCover: function(ev){
-    showCover($(ev.target).attr('src'));
-    return false;
   },
   triggerOptions: function(ev){
     if(!optionsVisible){
