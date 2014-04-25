@@ -213,6 +213,7 @@ exports.checkLogin = function(app_ref, user_data){
               console.log("User ", user.firstName, " has succesfully logged in.");
               //incremented logins..
               user.logins++;
+              app.io.broadcast("authentication_success");
             }else {
               console.log("User is bad.");
             }
