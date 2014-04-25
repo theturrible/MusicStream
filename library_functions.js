@@ -2,21 +2,13 @@ var fs = require('fs');
 var mm = require('musicmetadata');
 var taglib = require('taglib');
 var md5 = require('MD5');
-
 var util = require(__dirname + '/util.js');
-var config = require(__dirname + '/config').config();
 var User = require('./models/User');
-var xtend = require('xtend');
-
 var running = false;
 var hard_rescan = false;
 var app = null;
 var cnt = 0;
 var song_list = [];
-
-
-
-
 
 function findNextSong(){
   if(cnt < song_list.length && running){
@@ -28,9 +20,9 @@ function findNextSong(){
       setTimeout(findNextSong, 0);
     });
   } else {
-    console.log("finished!");
+    console.log("Found all songs.!");
     broadcast("update", {count: song_list.length, completed: song_list.length, details: "Finished"});
-    // reset for next scan
+    //cleanup.
     cnt = 0;
     song_list = [];
     running = false;
@@ -39,11 +31,8 @@ function findNextSong(){
 
 function findSong(item, callback){ 
   app.db.songs.findOne({location: item}, function(err, doc){
-    // only scan if we haven't scanned before, or we are scanning every document again
-    if(doc == null || hard_rescan){
-      // insert the new song
+    if(doc == null || hard_rescan){ 
       var parser = new mm(fs.createReadStream(item));
-
       parser.on('metadata', function(result){
         // add the location
         var song = {
@@ -57,44 +46,23 @@ function findSong(item, callback){
           duration: result.duration,
           location: item
         };
-        // write the cover photo as an md5 string
-        if(result.picture.length > 0){
-          pic = result.picture[0];
-          pic["format"] = pic["format"].replace(/[^a-z0-9]/gi, '_').toLowerCase();
-          filename = __dirname + '/dbs/covers/' + md5(pic['data']) + "." + pic["format"];
-          song.cover_location = filename;
-          fs.exists(filename, function(exists){
-            if(!exists){
-              fs.writeFile(filename, pic['data'], function(err){
-                if(err) console.log(err);
-                console.log("Wrote file!");
-                console.log("Added pic to song", song.title);
-              });
-            }
-          })
-        }
+
         if(doc == null){
-          // insert the song
+          //data base insertions
           app.db.songs.insert(song, function (err, newDoc){
-            taglib_fetch(item, newDoc._id);
-            // update the browser the song has been added
-            console.log("Added to db: ", song.title);
+            console.log(song.duration);
+              taglib.read(item, function(err, tag, audioProperties) {
+                 app.db.songs.update({ _id: newDoc._id }, { $set: { duration: audioProperties.length} });
+             });
+            console.log(song.duration);
+            console.log("Added to neDB: ", song.title);
             broadcast("update", {
               count: song_list.length,
               completed: cnt,
               details: "Added: " + newDoc["title"] + " - " + newDoc["albumartist"]
             });
           });
-        } else if (hard_rescan){
-          app.db.songs.update({location: item}, song, {}, function(err, numRplaced){
-            taglib_fetch(item, doc._id);
-            broadcast("update", {
-              count: song_list.length,
-              completed: cnt,
-              details: "Updated: " + song["title"] + " - " + song["artist"]
-            });
-          })
-        }
+        } 
       });
 
       parser.on('done', function (err) {
@@ -141,13 +109,6 @@ function taglib_fetch(path, id){
   });
 }
 
-// clear all the songs with `location` not in the dbs
-function clearNotIn(list){
-  app.db.songs.remove({location: { $nin: list }}, {multi: true}, function(err, numRemoved){
-    console.log(numRemoved + " tracks deleted");
-  });
-}
-
 //USER REGISTRATION
 
 exports.registerNewUser = function(app_ref, user_data){
@@ -182,10 +143,9 @@ exports.registerNewUser = function(app_ref, user_data){
 }
 
 //checks if the login is correct.
-require = "./config/passport.js";
 exports.checkLogin = function(app_ref, user_data){
   app = app_ref;
-  console.log(app.userInfo);
+  console.log(app.udserInfo);
   //console.log(app);
     
    User.findOne({ email: user_data.email }, function(err, user){
@@ -216,6 +176,9 @@ exports.checkLogin = function(app_ref, user_data){
               app.io.broadcast("authentication_success");
             }else {
               console.log("User is bad.");
+               var error ="Password is incorrect";
+              app.io.broadcast("authentication_failed", error);
+
             }
       console.log("user found")
       });
@@ -228,9 +191,6 @@ exports.addToFav= function(app_ref, ID){
   var edit = { favePlaylist: ID },
       options =  { multi: false }, 
       condition = { email: app.locals.settings.userInfo.email};
-  //attack to req.
-  //Model.update(conditions, update, options, callback);
-  //incrementing count
   console.log("adding favorite playlist");
   User.update(condition, edit, options, function callback (err, numAffected) {
     if(err){console.log("Oops, error!");};
@@ -252,12 +212,11 @@ exports.scanItems = function(app_ref, locations){
 exports.scanLibrary = function(app_ref, hard){
   app = app_ref;
   hard_rescan = hard;
-  util.walk(config.music_dir, function(err, list){
+  var path = __dirname + "/mp3/";
+  util.readDir("/Users/theturrible/Dropbox/School/506/mp3/", function(err, list){
     if(err){
       console.log(err);
     }
-
-    clearNotIn(list);
     song_list = list;
     findNextSong();
 

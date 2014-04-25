@@ -1,5 +1,5 @@
 // soccet connection and events
-var socket = io.connect('http://'+window.location.hostname+':9200');
+var socket = io.connect('https://'+window.location.hostname+':9200');
 socket.on('connect', function(){
   socket.emit('scan_page_connected');
   console.log("Socket connected");

@@ -12,15 +12,8 @@
     "taglib": "*",
     "nedb": "*",
     "MD5": "*",
-    "async": "*",
-    "adm-zip": "*",
-    "passport": "*",
-    "passport.socketio": "*",
-    "connect-mongo": "*",
     "mongodb": "*",
-    "express-session": "*",
     "mongoose": "*",
-    "passport-local": "*", 
-    "xtend": "*"
+    "bcrypt-nodejs": "*"
   }
 }

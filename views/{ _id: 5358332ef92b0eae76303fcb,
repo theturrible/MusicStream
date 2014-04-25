@@ -1,8 +1,0 @@
-{ _id: 5358332ef92b0eae76303fcb,
-  email: 'grin.van@gmail.com',
-  firstName: 'Ivan',
-  lastName: 'Grinkevich',
-  password: '$2a$05$CUV/.yR2Wk3OaB03iLULFufGv6E.XHhu2cxYk6tZvabdNt36F534u',
-  favePlaylist: '',
-  logins: 0,
-  __v: 0 }

@@ -1,8 +1,5 @@
 var util = require(__dirname + '/../util.js');
 var lib_func = require(__dirname + '/../library_functions.js');
-var config = require(__dirname + '/../config').config();
-var async = require('async');
-var AdmZip = require('adm-zip');
 var os = require('os');
 /*
  * GET home page.
@@ -19,24 +16,20 @@ exports.createRoutes = function(app_ref){
   app.get('/login', login);
   app.get('/logout', logout);
   app.get('/songs/:id', sendSong);
-  app.get('/cover/:id', sendCover);
-  //app.get('/favorite', logout);
 
-  //app.get('/downloadplaylist/:id', downloadPlaylist);
-  //login and register controls
-
-
+  //library scanner
   app.io.route('scan_page_connected', function(req){ req.io.join('scanners'); });
+  
+  //user registraion and login.
   app.io.route('register_new', function(req){ lib_func.registerNewUser(app, req.data); });
   app.io.route('check_login', function(req){ lib_func.checkLogin(app, req.data); });
-  app.io.route('logged_in', musicRouteLoggedIn);
+
   //log
   app.io.route('login_page_connected', function(req){ req.io.join('auth'); });
   app.io.route('register_page_connected', function(req){ req.io.join('auth'); });
   app.io.route('player_page_connected', function(req){ req.io.join('players'); });
-  app.io.route('set_comp_name', setCompName);
+
   app.io.route('start_scan', function(req){ lib_func.scanLibrary(app, false); });
-  app.io.route('start_scan_hard', function(req){ lib_func.scanLibrary(app, true); });
   app.io.route('stop_scan', function(req){ lib_func.stopScan(app); });
   app.io.route('fetch_songs', returnSongs);
   app.io.route('fetch_playlists', returnPlaylists);
@@ -47,9 +40,7 @@ exports.createRoutes = function(app_ref){
 
   app.io.route('add_to_playlist', addToPlaylist);
   app.io.route('remove_from_playlist', removeFromPlaylist);
-  app.io.route('hard_rescan', rescanItem);
-  // remote control routes
-  app.io.route('get_receivers', getReceivers);
+ 
 };
 
 function account(req, res){
@@ -76,6 +67,8 @@ function account(req, res){
 function register(req, res){
   res.render('register', {menu: false});
 }
+
+
 function login(req, res){
   if(app.locals.settings.userInfo){
       console.log("GET THE FUCK OUT OF THE LOGIN PAGE.");
@@ -106,27 +99,12 @@ function musicRoute(req, res){
   
 }
 
-function musicRouteLoggedIn(req, res){
-  console.log(app.locals.settings.userInfo);
-  }
-
-
 function sendSong(req, res){
   app.db.songs.findOne({_id: req.params.id}, function(err, song){
     if(err || !song){
       res.status(404).send();
     } else {
       res.sendfile(encodeURIComponent(song.location));
-    }
-  });
-}
-
-function sendCover(req, res){
-  app.db.songs.findOne({_id: req.params.id}, function(err, song){
-    if(!song || !song.hasOwnProperty("cover_location")){
-      res.sendfile("/static/images/unknown.png", {root: __dirname + "/../"});
-    } else {
-      res.sendfile(song.cover_location);
     }
   });
 }
@@ -242,34 +220,16 @@ function rescanItem(req){
 }
 
 function scanRoute(req, res){
-  util.walk(config.music_dir, function(err, list){
+  util.readDir("/Users/theturrible/Dropbox/School/506/mp3/", function(err, list){
     if(err){
       console.log(err);
     }
 
     res.render('scan', {
-      dir: config.music_dir,
+      dir: "/Users/theturrible/Dropbox/School/506/mp3/",
       num_items: list.length,
       menu: true
     });
   });
 }
 
-function setCompName(req){
-  req.io.join('receivers');
-  req.socket.set('name', req.data.name);
-}
-
-function getReceivers(req){
-  var receivers = app.io.sockets.clients('receivers');
-  var validReceivers = [];
-  receivers.forEach(function(client){
-    if(client.store.data.name && client.store.data.name.length > 0){
-      validReceivers.push({
-        id: client.id,
-        name: client.store.data.name
-      });
-    }
-  });
-  req.io.emit('recievers', {"recievers": validReceivers});
-}
