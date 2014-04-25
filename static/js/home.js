@@ -63,8 +63,7 @@ function PlayState(){
     one: 1,
     none: 2
   };
-  // search info
-  this.searchText = ""
+
   // currently viewed songs
   this.songs = [];
   // current pool of songs to play
@@ -118,51 +117,7 @@ function PlayState(){
       }
     }
   }
-  this.updateSearch = function(searchText){
-    MusicApp.router.navigate("search/"+encodeURIComponent(searchText), true);
-  }
-  this.searchItems = function(searchText){
-    this.searchText = searchText;
-    if(searchText.length < 3){
-      return;
-    }
-    searchText = searchText.toLowerCase();
-    var tmpSongs = [];
-    for (var i = 0; i < this.song_collection.length; i++) {
-      var item = this.song_collection.models[i];
-      if(this.songMatches(item, searchText)){
-        tmpSongs.push(item);
-      }
-    }
-    this.songs = tmpSongs;
-    this.playlist = {
-      title: "Search Results for: '"+this.searchText+"'",
-      editable: false,
-      songs: deAttribute(this.songs)
-    };
-    if(MusicApp.router.songview){
-      MusicApp.router.songview.render();
-    } else {
-      MusicApp.router.songview = new SongView();
-      MusicApp.contentRegion.show(MusicApp.router.songview);
-    }
-  }
-  // note: this is a very expensive method of searching
-  // it is used to match each term in the search against the title, album and artist
-  this.songMatches = function(item, searchText){
-    item = item.attributes;
-    if(!item.searchString){
-      item.searchString = "";
-      item.searchString += (item.title) ? item.title.toLowerCase() : "";
-      item.searchString += (item.album) ? item.album.toLowerCase() : "";
-      item.searchString += (item.display_artist) ? item.display_artist.toLowerCase() : "";
-    }
-    var searchTextParts = searchText.split(/[ ]+/);
-    if(searchMatchesSong(item.searchString, searchTextParts)){
-      return true;
-    }
-    return false;
-  }
+
   this.durationChanged = function(){
     var seconds = prettyPrintSeconds(this.current_track.duration);
     $(".duration").html(seconds);
@@ -392,8 +347,7 @@ MusicAppRouter = Backbone.Router.extend({
   songview: null,
   settingsbar: null,
   routes: {
-    "playlist/:id": "playlist",
-    "search/:search": "search"
+    "playlist/:id": "playlist"
   },
   playlist: function(id){
     findId = player.playlist_collection.getBy_Id(id);
@@ -406,9 +360,6 @@ MusicAppRouter = Backbone.Router.extend({
       this.songview = new SongView();
       MusicApp.contentRegion.show(this.songview);
     }
-  },
-  search: function(search){
-    player.searchItems(search);
   },
   sidebar: function(id){
     this.sb = new SidebarView();
@@ -446,19 +397,15 @@ SongView = Backbone.View.extend({
     this.renderSong();
   },
   events: {
-    "click .colsearch": "triggerSearch",
+    
     "click tbody > tr": "triggerSong",
     "click .options": "triggerOptions",
     "contextmenu td": "triggerOptions",
     "click .cover": "triggerCover",
     "click .delete_playlist": "deletePlaylist"
   },
-  triggerSearch: function(ev){
-    search = $(ev.target).text();
-    player.updateSearch(search);
-  },
   triggerSong: function(ev){
-    if($(ev.target).hasClass("options") || $(ev.target).hasClass("colsearch")){
+    if($(ev.target).hasClass("options")){
       return;
     }
     id = $(ev.target).closest("tr").attr('id');
@@ -634,12 +581,11 @@ SidebarView = Backbone.View.extend({
   render: function(){
     var editable = player.playlist_collection.where({'editable': true});
     var fixed = player.playlist_collection.where({'editable': false});
-    this.setElement(render(this.template, {"title": "Playlists", search: player.searchText, editable: editable, fixed: fixed}));
+    this.setElement(render(this.template, {"title": "Playlists", search: null, editable: editable, fixed: fixed}));
   },
   events: {
     "click .add_playlist": "addPlaylist",
     "click .start_up": "startUp",
-    "keyup .search-input": "searchItems"
   },
   startUp: function(ev){
     bootbox.dialog({
@@ -664,11 +610,6 @@ SidebarView = Backbone.View.extend({
         socket.emit('create_playlist', {"title": result, songs: []});
       }
     });
-  },
-  searchItems: function(){
-    searchText = $(".search-input").val();
-    player.updateSearch(searchText);
-    return true;
   }
 });
 
@@ -711,7 +652,6 @@ InfoView = Backbone.View.extend({
     this.$el.html(render(this.template, player.current_song));
   },
   events: {
-    "click .colsearch": "triggerSearch",
     "click .info_cover": "triggerCover",
     "click .info_options": "triggerOptions"
   },
@@ -725,10 +665,6 @@ InfoView = Backbone.View.extend({
       createOptions(ev.clientX, ev.clientY);
     }
     return false;
-  },
-  triggerSearch: function(ev){
-    search = $(ev.target).text();
-    player.updateSearch(search);
   }
 });
 
@@ -773,15 +709,6 @@ function prettyPrintSecondsorNA(seconds){
   } else {
     return prettyPrintSeconds(seconds);
   }
-}
-
-function searchMatchesSong(songString, searchWords){
-  for(var i = 0; i < searchWords.length; i++){
-    if(songString.indexOf(searchWords[i]) == -1){
-      return false;
-    }
-  }
-  return true;
 }
 
 function randomIntFromInterval(min,max){
